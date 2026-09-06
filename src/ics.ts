@@ -8,6 +8,7 @@ import { config } from "./config.ts";
 import type { Lesson, StoredState } from "./types.ts";
 import { activityLabel } from "./render.ts";
 import { lessonTitle } from "./subjects.ts";
+import { holidayMarkerVEvents } from "./holidays.ts";
 
 const ICS_PATH = join(process.cwd(), "docs", "scuola.ics");
 
@@ -151,6 +152,7 @@ export function buildIcs(state: StoredState): IcsResult {
       lines.push("END:VEVENT");
     }
   }
+  lines.push(...holidayMarkerVEvents(esc, now));
   lines.push("END:VCALENDAR");
 
   const content = lines.map(fold).join("\r\n") + "\r\n";

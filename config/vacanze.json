@@ -1,0 +1,15 @@
+{
+  "_nota": "Periodi SENZA lezioni per le scuole in lingua italiana della Provincia di Bolzano, a.s. 2026/27. Date 'from'/'to' incluse (YYYY-MM-DD). Le lezioni che cadono in questi periodi non vengono messe in calendario. Fonti: Provincia autonoma di Bolzano / tuttitalia / scuolalink.",
+  "schoolYear": "2026/27",
+  "termStart": "2026-09-07",
+  "termEnd": "2027-06-16",
+  "addAllDayMarkers": true,
+  "breaks": [
+    { "name": "Pausa autunnale", "from": "2026-10-31", "to": "2026-11-08" },
+    { "name": "Immacolata", "from": "2026-12-08", "to": "2026-12-08" },
+    { "name": "Vacanze di Natale", "from": "2026-12-24", "to": "2027-01-06" },
+    { "name": "Vacanze di Carnevale", "from": "2027-02-06", "to": "2027-02-14" },
+    { "name": "Vacanze di Pasqua", "from": "2027-03-25", "to": "2027-03-30" },
+    { "name": "Festa della Repubblica", "from": "2027-06-02", "to": "2027-06-02" }
+  ]
+}

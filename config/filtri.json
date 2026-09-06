@@ -1,0 +1,4 @@
+{
+  "_nota": "Parole chiave (minuscole). Se compaiono nel titolo, nel nome del docente, nella nota, nell'aula o nel tipo attività di una lezione, quella lezione NON viene messa in calendario. Utile per attività musicali/extra che non ti interessano.",
+  "escludiSeContiene": ["banda", "oboe"]
+}

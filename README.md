@@ -133,6 +133,22 @@ Il sito non pubblica la materia, quindi la ricaviamo dal docente tramite
 
 Modifica il file, commit & push: al run successivo i titoli si aggiornano.
 
+## Vacanze (config/vacanze.json)
+
+Periodi senza lezioni per le scuole in lingua italiana della Provincia di
+Bolzano, a.s. 2026/27 (pausa autunnale, Immacolata, Natale, Carnevale,
+Pasqua, Festa della Repubblica). Le lezioni che cadono in questi giorni
+**non vengono messe in calendario**. Con `addAllDayMarkers: true` il feed
+aggiunge un evento "tutto il giorno" 🏖️ per ogni periodo.
+
+## Filtri (config/filtri.json)
+
+`escludiSeContiene`: elenco di parole (minuscole). Una lezione che le
+contiene — nel titolo, docente, nota, aula o tipo — viene esclusa dal
+calendario. Preimpostate: `banda`, `oboe`. (Nota: la sorgente della classe
+3 Liceo non contiene queste attività; il filtro è un paracadute nel caso
+comparissero.)
+
 ## Cosa NON fa / limiti noti
 
 - **Materia**: ricavata dal docente via `config/materie.json` (vedi sopra);

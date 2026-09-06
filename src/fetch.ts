@@ -10,6 +10,8 @@ import {
   parseEntriesFromHtml,
   parsePublicationJson,
 } from "./parse.ts";
+import { holidayOn } from "./holidays.ts";
+import { isExcluded } from "./filters.ts";
 
 const TIMEOUT_MS = 20_000;
 const POLITE_DELAY_MS = 1_200;
@@ -98,8 +100,22 @@ export async function fetchWeek(weekStart: string, cache: HttpCacheMeta): Promis
     };
   }
 
-  const lessons = mergeEntries(rawEntries);
-  return { weekStart, publication, entries: rawEntries, lessons };
+  // Scarta ciò che cade in vacanza o che è escluso per parola chiave.
+  const kept = [];
+  const reasons = new Set<string>();
+  for (const e of rawEntries) {
+    const h = holidayOn(e.date);
+    if (h) reasons.add(h.name);
+    else if (isExcluded(e)) reasons.add("filtro parole chiave");
+    else kept.push(e);
+  }
+  const dropped = rawEntries.length - kept.length;
+  if (dropped > 0) {
+    log.info(`Settimana ${weekStart}: ${dropped} lezioni ignorate (${[...reasons].join(", ")}).`);
+  }
+
+  const lessons = mergeEntries(kept);
+  return { weekStart, publication, entries: kept, lessons };
 }
 
 function parseVersionFromHtml(html: string): number {
