@@ -97,10 +97,25 @@ async function cmdCheck(): Promise<void> {
   writeHeartbeat();
 }
 
+async function cmdTestNotify(): Promise<void> {
+  const outcome = await sendNotification({
+    title: "📚 Test orario-3liceo",
+    body:
+      "Notifica di prova: il canale funziona.\n" +
+      "Riceverai un messaggio come questo solo quando l'orario cambia.",
+  });
+  if (outcome.sent) log.info("Notifica di prova inviata.");
+  else {
+    log.error(`Notifica di prova NON inviata (${outcome.reason}).`);
+    process.exitCode = 1;
+  }
+}
+
 const commands: Record<string, () => Promise<void>> = {
   print: cmdPrint,
   check: cmdCheck,
   selftest: async () => runSelftest(),
+  "test-notify": cmdTestNotify,
 };
 
 const cmd = process.argv[2] ?? "print";

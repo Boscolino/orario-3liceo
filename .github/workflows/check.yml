@@ -8,7 +8,12 @@ on:
     # della mattina, se non ci sono variazioni, non fa nulla.
     - cron: "0 4 * * 1-5"
     - cron: "0 5 * * 1-5"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      test_notification:
+        description: "Invia una notifica di prova invece del controllo"
+        type: boolean
+        default: false
 
 # Un solo run alla volta; non annullare quello in corso (potrebbe star committando).
 concurrency:
@@ -38,7 +43,12 @@ jobs:
           node-version: "22"
 
       - name: Controllo e sincronizzazione
+        if: ${{ inputs.test_notification != true }}
         run: node src/main.ts check
+
+      - name: Notifica di prova
+        if: ${{ inputs.test_notification == true }}
+        run: node src/main.ts test-notify
 
       - name: Commit dello stato aggiornato
         run: |

@@ -87,11 +87,15 @@ tirando giù la lista dei calendari).
 ## Uso locale (facoltativo)
 
 ```bash
-cp .env.example .env      # opzionale: personalizza le variabili
-npm run print             # stampa l'orario, non scrive nulla
-npm run check             # fa un ciclo completo (stato, .ics, notifica)
-npm run selftest          # verifica confronto + .ics su dati simulati
+cp .env.example .env             # opzionale: personalizza le variabili
+npm run print                    # stampa l'orario, non scrive nulla
+npm run check                    # fa un ciclo completo (stato, .ics, notifica)
+npm run selftest                 # verifica confronto + .ics su dati simulati
+node src/main.ts test-notify     # invia una notifica di prova su ntfy
 ```
+
+Per una notifica di prova senza terminale: **Actions → "Controllo orario"
+→ Run workflow** e spunta *"Invia una notifica di prova"*.
 
 Richiede **Node ≥ 22.6** (esegue i file `.ts` direttamente, nessuna
 dipendenza da installare).
