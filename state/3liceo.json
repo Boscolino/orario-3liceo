@@ -1,6 +1,6 @@
 {
   "classSlug": "3liceo",
-  "updatedAt": "2026-09-06T17:37:00.436Z",
+  "updatedAt": "2026-09-06T17:44:40.481Z",
   "weeks": {
     "2026-09-07": {
       "weekStart": "2026-09-07",
@@ -23,6 +23,9 @@
           "teachers": [
             "Gualtiero Giovanazzi"
           ],
+          "teacherKeys": [
+            "giovanazzi"
+          ],
           "room": "3LSA",
           "notes": "9:30 - 11:00",
           "occurrenceIds": [
@@ -43,6 +46,9 @@
           "activityType": "lesson",
           "teachers": [
             "Francesca Dasti"
+          ],
+          "teacherKeys": [
+            "dasti"
           ],
           "room": "3LSA",
           "notes": null,
@@ -66,6 +72,9 @@
           "teachers": [
             "Francesco Carraro"
           ],
+          "teacherKeys": [
+            "carraro"
+          ],
           "room": "3LSA",
           "notes": null,
           "occurrenceIds": [
@@ -87,6 +96,9 @@
           "teachers": [
             "Daniele Ercoli"
           ],
+          "teacherKeys": [
+            "ercoli"
+          ],
           "room": "3LSA",
           "notes": null,
           "occurrenceIds": [
@@ -107,6 +119,9 @@
           "activityType": "lesson",
           "teachers": [
             "Claudia Vecchiato"
+          ],
+          "teacherKeys": [
+            "vecchiato"
           ],
           "room": "3LSA",
           "notes": null,
@@ -130,6 +145,9 @@
           "teachers": [
             "Giulia Pontalti"
           ],
+          "teacherKeys": [
+            "pontalti"
+          ],
           "room": "3LSA",
           "notes": null,
           "occurrenceIds": [
@@ -150,6 +168,9 @@
           "activityType": "lesson",
           "teachers": [
             "Gualtiero Giovanazzi"
+          ],
+          "teacherKeys": [
+            "giovanazzi"
           ],
           "room": "3LSA",
           "notes": null,
@@ -172,6 +193,9 @@
           "teachers": [
             "Claudia Vecchiato"
           ],
+          "teacherKeys": [
+            "vecchiato"
+          ],
           "room": "3LSA",
           "notes": null,
           "occurrenceIds": [
@@ -193,6 +217,9 @@
           "teachers": [
             "Marica Ottavia Rizzo"
           ],
+          "teacherKeys": [
+            "rizzo"
+          ],
           "room": "3LSA",
           "notes": null,
           "occurrenceIds": [
@@ -213,6 +240,9 @@
           "activityType": "lesson",
           "teachers": [
             "Giorgia Modonese"
+          ],
+          "teacherKeys": [
+            "modonese"
           ],
           "room": "3LSA",
           "notes": null,
@@ -236,6 +266,9 @@
           "teachers": [
             "Francesca Dasti"
           ],
+          "teacherKeys": [
+            "dasti"
+          ],
           "room": "3LSA",
           "notes": null,
           "occurrenceIds": [
@@ -257,6 +290,9 @@
           "activityType": "lesson",
           "teachers": [
             "Andrea Telloli"
+          ],
+          "teacherKeys": [
+            "telloli"
           ],
           "room": "Palestra",
           "notes": null,
@@ -280,6 +316,9 @@
           "teachers": [
             "Kevin Delugan"
           ],
+          "teacherKeys": [
+            "delugan"
+          ],
           "room": "3LSA",
           "notes": null,
           "occurrenceIds": [
@@ -301,6 +340,9 @@
           "activityType": "lesson",
           "teachers": [
             "Paolo Cacciari"
+          ],
+          "teacherKeys": [
+            "cacciari"
           ],
           "room": "3LSA",
           "notes": null,
@@ -324,6 +366,9 @@
           "teachers": [
             "Paolo Cacciari"
           ],
+          "teacherKeys": [
+            "cacciari"
+          ],
           "room": "3LSA",
           "notes": null,
           "occurrenceIds": [
@@ -345,6 +390,9 @@
           "activityType": "lesson",
           "teachers": [
             "Francesco Carraro"
+          ],
+          "teacherKeys": [
+            "carraro"
           ],
           "room": "3LSA",
           "notes": null,
