@@ -114,6 +114,7 @@ per GitHub Actions):
 | `MAX_WEEKS` | `45` | tetto di settimane guardate avanti; ci si ferma dopo 3 settimane consecutive non pubblicate |
 | `TIMEZONE` | `Europe/Rome` | |
 | `CALENDAR_NAME` | `📚 Scuola` | nome del calendario nell'`.ics` |
+| `SCHOOL_VENUE` | `Scuola Salesiani Rainerum, Piazza Domenicani 15, 39100 Bolzano` | indirizzo messo nel campo Luogo di ogni lezione (aula anteposta) |
 | `NTFY_TOPIC` | *(vuoto)* | vuoto = notifiche disattivate, solo log |
 | `NTFY_SERVER` | `https://ntfy.sh` | |
 

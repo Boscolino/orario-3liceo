@@ -40,7 +40,8 @@ DESCRIPTION:Docente: Gualtiero Giovanazzi\nAula: 3LSA\nNota: 9:30 - 11:00\n
  ⚠️ orario modificato per questa settimana
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-LOCATION:3LSA
+LOCATION:3LSA — Scuola Salesiani Rainerum\, Piazza Domenicani 15\, 39100 
+ Bolzano
 END:VEVENT
 BEGIN:VEVENT
 UID:eab2a8e2-c6ec-4974-b056-d0d78ebb3481@orario-3liceo
@@ -53,7 +54,8 @@ SUMMARY:Dasti
 DESCRIPTION:Docente: Francesca Dasti\nAula: 3LSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-LOCATION:3LSA
+LOCATION:3LSA — Scuola Salesiani Rainerum\, Piazza Domenicani 15\, 39100 
+ Bolzano
 END:VEVENT
 BEGIN:VEVENT
 UID:eb57272c-37e2-4e9a-a0fc-fda7e400c571@orario-3liceo
@@ -66,7 +68,8 @@ SUMMARY:Lezione di Storia
 DESCRIPTION:Docente: Francesco Carraro\nAula: 3LSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-LOCATION:3LSA
+LOCATION:3LSA — Scuola Salesiani Rainerum\, Piazza Domenicani 15\, 39100 
+ Bolzano
 END:VEVENT
 BEGIN:VEVENT
 UID:ea3b6f97-1db6-4e73-8682-5e5cc3c1a396@orario-3liceo
@@ -79,7 +82,8 @@ SUMMARY:Lezione di Religione
 DESCRIPTION:Docente: Daniele Ercoli\nAula: 3LSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-LOCATION:3LSA
+LOCATION:3LSA — Scuola Salesiani Rainerum\, Piazza Domenicani 15\, 39100 
+ Bolzano
 END:VEVENT
 BEGIN:VEVENT
 UID:c250e019-3cc2-42c2-ab93-5e394da84d8d@orario-3liceo
@@ -92,7 +96,8 @@ SUMMARY:Lezione di Inglese
 DESCRIPTION:Docente: Claudia Vecchiato\nAula: 3LSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-LOCATION:3LSA
+LOCATION:3LSA — Scuola Salesiani Rainerum\, Piazza Domenicani 15\, 39100 
+ Bolzano
 END:VEVENT
 BEGIN:VEVENT
 UID:266a32fe-6a1c-42f6-8970-e336e6800a3a@orario-3liceo
@@ -105,7 +110,8 @@ SUMMARY:Lezione di Storia dell'arte
 DESCRIPTION:Docente: Giulia Pontalti\nAula: 3LSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-LOCATION:3LSA
+LOCATION:3LSA — Scuola Salesiani Rainerum\, Piazza Domenicani 15\, 39100 
+ Bolzano
 END:VEVENT
 BEGIN:VEVENT
 UID:9016d22b-acba-458a-9092-57919c39cc87@orario-3liceo
@@ -118,7 +124,8 @@ SUMMARY:Lezione di Fisica
 DESCRIPTION:Docente: Gualtiero Giovanazzi\nAula: 3LSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-LOCATION:3LSA
+LOCATION:3LSA — Scuola Salesiani Rainerum\, Piazza Domenicani 15\, 39100 
+ Bolzano
 END:VEVENT
 BEGIN:VEVENT
 UID:508c36a8-4805-4708-9a43-1a6b5d527b7e@orario-3liceo
@@ -131,7 +138,8 @@ SUMMARY:Lezione di Inglese
 DESCRIPTION:Docente: Claudia Vecchiato\nAula: 3LSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-LOCATION:3LSA
+LOCATION:3LSA — Scuola Salesiani Rainerum\, Piazza Domenicani 15\, 39100 
+ Bolzano
 END:VEVENT
 BEGIN:VEVENT
 UID:83680ad2-b045-49a3-b590-9e287dfc779e@orario-3liceo
@@ -144,7 +152,8 @@ SUMMARY:Rizzo
 DESCRIPTION:Docente: Marica Ottavia Rizzo\nAula: 3LSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-LOCATION:3LSA
+LOCATION:3LSA — Scuola Salesiani Rainerum\, Piazza Domenicani 15\, 39100 
+ Bolzano
 END:VEVENT
 BEGIN:VEVENT
 UID:cc4578a1-5b23-47d6-9671-c2a76455e60b@orario-3liceo
@@ -157,7 +166,8 @@ SUMMARY:Lezione di Scienze
 DESCRIPTION:Docente: Giorgia Modonese\nAula: 3LSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-LOCATION:3LSA
+LOCATION:3LSA — Scuola Salesiani Rainerum\, Piazza Domenicani 15\, 39100 
+ Bolzano
 END:VEVENT
 BEGIN:VEVENT
 UID:bb0aa14b-de59-41d4-bb2c-b794248fce45@orario-3liceo
@@ -170,7 +180,8 @@ SUMMARY:Dasti
 DESCRIPTION:Docente: Francesca Dasti\nAula: 3LSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-LOCATION:3LSA
+LOCATION:3LSA — Scuola Salesiani Rainerum\, Piazza Domenicani 15\, 39100 
+ Bolzano
 END:VEVENT
 BEGIN:VEVENT
 UID:db17c513-3042-4e2a-8225-99936864be2c@orario-3liceo
@@ -184,7 +195,8 @@ DESCRIPTION:Docente: Andrea Telloli\nAula: Palestra\n⚠️ orario modifica
  to per questa settimana
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-LOCATION:Palestra
+LOCATION:Palestra — Scuola Salesiani Rainerum\, Piazza Domenicani 15\, 39
+ 100 Bolzano
 END:VEVENT
 BEGIN:VEVENT
 UID:0ec149c8-c9db-43b1-a0c4-1c5818988eb1@orario-3liceo
@@ -197,7 +209,8 @@ SUMMARY:Lezione di Informatica
 DESCRIPTION:Docente: Kevin Delugan\nAula: 3LSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-LOCATION:3LSA
+LOCATION:3LSA — Scuola Salesiani Rainerum\, Piazza Domenicani 15\, 39100 
+ Bolzano
 END:VEVENT
 BEGIN:VEVENT
 UID:2380e6e6-2e67-4bbc-965e-4b17f4ddcbca@orario-3liceo
@@ -210,7 +223,8 @@ SUMMARY:Lezione di Italiano
 DESCRIPTION:Docente: Paolo Cacciari\nAula: 3LSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-LOCATION:3LSA
+LOCATION:3LSA — Scuola Salesiani Rainerum\, Piazza Domenicani 15\, 39100 
+ Bolzano
 END:VEVENT
 BEGIN:VEVENT
 UID:38d76f92-e7ec-4fe7-a54f-8d4842ee66b9@orario-3liceo
@@ -223,7 +237,8 @@ SUMMARY:Lezione di Italiano
 DESCRIPTION:Docente: Paolo Cacciari\nAula: 3LSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-LOCATION:3LSA
+LOCATION:3LSA — Scuola Salesiani Rainerum\, Piazza Domenicani 15\, 39100 
+ Bolzano
 END:VEVENT
 BEGIN:VEVENT
 UID:0c141b62-d640-4b04-b53f-09a8d5e81b25@orario-3liceo
@@ -236,7 +251,8 @@ SUMMARY:Lezione di Storia
 DESCRIPTION:Docente: Francesco Carraro\nAula: 3LSA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-LOCATION:3LSA
+LOCATION:3LSA — Scuola Salesiani Rainerum\, Piazza Domenicani 15\, 39100 
+ Bolzano
 END:VEVENT
 BEGIN:VEVENT
 UID:vacanza-2026-10-31@orario-3liceo

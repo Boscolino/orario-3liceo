@@ -148,7 +148,8 @@ export function buildIcs(state: StoredState): IcsResult {
         "STATUS:CONFIRMED",
         "TRANSP:OPAQUE",
       );
-      if (l.room) lines.push(`LOCATION:${esc(l.room)}`);
+      const place = l.room ? `${l.room} — ${config.schoolVenue}` : config.schoolVenue;
+      lines.push(`LOCATION:${esc(place)}`);
       lines.push("END:VEVENT");
     }
   }

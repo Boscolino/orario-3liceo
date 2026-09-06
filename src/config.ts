@@ -42,6 +42,12 @@ export const config = {
   timezone: env("TIMEZONE", "Europe/Rome"),
   /** Nome del calendario prodotto (X-WR-CALNAME dell'.ics). */
   calendarName: env("CALENDAR_NAME", "📚 Scuola"),
+  /** Indirizzo della scuola: messo nel campo LOCATION di ogni lezione
+   *  (così Calendario/Mappe sanno dov'è). L'aula viene anteposta. */
+  schoolVenue: env(
+    "SCHOOL_VENUE",
+    "Scuola Salesiani Rainerum, Piazza Domenicani 15, 39100 Bolzano",
+  ),
   /** Topic ntfy per le notifiche. Vuoto = notifiche disattivate (solo log). */
   ntfyTopic: env("NTFY_TOPIC", ""),
   /** Server ntfy. */
