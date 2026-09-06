@@ -101,7 +101,14 @@ export interface IcsResult {
 }
 
 export function buildIcs(state: StoredState): IcsResult {
-  const now = dtUtc(new Date().toISOString());
+  // DTSTAMP deterministico: la data di pubblicazione più recente tra le
+  // settimane note (fallback: epoch). Così l'.ics cambia SOLO quando cambia
+  // l'orario o il generatore — niente commit inutili a ogni run.
+  const stamps = Object.values(state.weeks)
+    .map((w) => w.publication?.publishedAt)
+    .filter((x): x is string => Boolean(x))
+    .sort();
+  const now = dtUtc(stamps[stamps.length - 1] ?? "1970-01-01T00:00:00.000Z");
   const lines: string[] = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",

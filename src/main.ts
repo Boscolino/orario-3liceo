@@ -73,10 +73,10 @@ async function cmdCheck(): Promise<void> {
 
   const changed = diffs.length > 0;
 
-  if (bootstrap || changed) {
-    const ics = writeIcs(state);
-    log.info(`scuola.ics rigenerato: ${ics.eventCount} eventi.`);
-  }
+  // Riscriviamo sempre l'.ics: è deterministico, quindi cambia (e viene
+  // committato) solo se cambia l'orario o il generatore.
+  const ics = writeIcs(state);
+  if (bootstrap || changed) log.info(`scuola.ics rigenerato: ${ics.eventCount} eventi.`);
 
   if (!bootstrap && changed) {
     log.info("Confronto con la versione precedente:");
