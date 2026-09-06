@@ -3,6 +3,7 @@
 import type { Lesson, WeekSchedule } from "./types.ts";
 import { humanDate, humanRange, weekEnd } from "./dates.ts";
 import { config } from "./config.ts";
+import { subjectFor } from "./subjects.ts";
 
 const ACTIVITY_LABEL: Record<string, string> = {
   lesson: "Lezione",
@@ -21,7 +22,11 @@ export function activityLabel(type: string): string {
 
 /** Riga compatta di una lezione. */
 export function lessonLine(l: Lesson): string {
-  const who = l.teachers.join(", ") || "—";
+  const subject = subjectFor(l);
+  const teachers = l.teachers.join(", ");
+  const who = subject
+    ? `${subject}${teachers ? ` (${teachers})` : ""}`
+    : teachers || "—";
   const where = l.room ? ` · ${l.room}` : "";
   const kind = l.activityType !== "lesson" ? ` [${activityLabel(l.activityType)}]` : "";
   const flags: string[] = [];

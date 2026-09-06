@@ -6,6 +6,7 @@ import { diffWeek, hasChanges } from "./diff.ts";
 import { buildIcs } from "./ics.ts";
 import { buildNotification, countChanges, detailLines } from "./summary.ts";
 import { fmtMinutes } from "./dates.ts";
+import { lastNameKey } from "./parse.ts";
 
 function L(
   uid: string,
@@ -26,6 +27,7 @@ function L(
     title: "Lezione",
     activityType: "lesson",
     teachers,
+    teacherKeys: teachers.map(lastNameKey),
     room,
     notes: null,
     occurrenceIds: [uid],

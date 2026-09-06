@@ -118,9 +118,25 @@ per GitHub Actions):
 
 Nessuna password o credenziale nel repo: il topic ntfy sta nei Secrets.
 
+## Materie (config/materie.json)
+
+Il sito non pubblica la materia, quindi la ricaviamo dal docente tramite
+`config/materie.json`:
+
+- `byLastName`: `"cognome": "Materia"` (cognome minuscolo, senza accenti).
+  Titolo evento → `Lezione di <Materia>`. I docenti non elencati restano
+  col cognome come titolo.
+- `biweekly`: docenti che alternano due materie a settimane. `altWeeks` è
+  l'elenco dei **lunedì** (`YYYY-MM-DD`) in cui si fa `alt`; tutte le altre
+  settimane usano `default`. Esempio: Pontalti fa `Storia dell'arte` di
+  default e `Disegno tecnico` nelle settimane elencate in `altWeeks`.
+
+Modifica il file, commit & push: al run successivo i titoli si aggiornano.
+
 ## Cosa NON fa / limiti noti
 
-- **Materia**: il sito non la espone. Non si può mostrare "Matematica → Fisica".
+- **Materia**: ricavata dal docente via `config/materie.json` (vedi sopra);
+  dove il docente non è mappato resta il cognome.
 - **Orari cron e ora legale**: GitHub Actions usa UTC; il workflow lancia
   alle 04:00 e alle 05:00 UTC per cadere vicino alle 06:00 locali sia
   d'inverno sia d'estate. Il cron può ritardare di qualche minuto.

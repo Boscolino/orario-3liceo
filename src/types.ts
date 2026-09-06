@@ -8,6 +8,7 @@ export interface RawEntry {
   title: string; // di norma sempre "Lezione" (il sito non pubblica la materia)
   activityType: string; // lesson | schedule_change | extra_hours | educational_trip | activity | laboratory | seminar | mixed
   teachers: string[]; // nomi completi, es. "Gualtiero Giovanazzi"
+  teacherKeys: string[]; // cognomi normalizzati, es. "giovanazzi" (per la mappa materie)
   room: string | null; // etichetta aula, es. "3LSA" oppure "Palestra"
   notes: string | null; // publicNotes
   occurrenceId: string; // id stabile del blocco lato sorgente
@@ -27,6 +28,7 @@ export interface Lesson {
   title: string;
   activityType: string;
   teachers: string[];
+  teacherKeys: string[]; // cognomi normalizzati
   room: string | null;
   notes: string | null;
   occurrenceIds: string[]; // tutti i blocchi che compongono la lezione

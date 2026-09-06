@@ -7,7 +7,7 @@ interface SiteEntry {
   date: string;
   title?: string | null;
   activityType?: string | null;
-  teachers?: Array<{ name?: string }> | null;
+  teachers?: Array<{ name?: string; normalizedLastName?: string }> | null;
   locations?: Array<{ label?: string; code?: string }> | null;
   publicNotes?: string | null;
   startMinute: number;
@@ -18,9 +18,17 @@ interface SiteEntry {
   substitutions?: unknown[] | null;
 }
 
+/** "Marica Ottavia Rizzo" -> "rizzo" (accenti rimossi, minuscolo). */
+export function lastNameKey(name: string): string {
+  const w = name.trim().split(/\s+/).pop() ?? "";
+  return w.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+}
+
 export function normalizeEntry(e: SiteEntry): RawEntry {
-  const teachers = (e.teachers ?? [])
-    .map((t) => (t?.name ?? "").trim())
+  const rawTeachers = e.teachers ?? [];
+  const teachers = rawTeachers.map((t) => (t?.name ?? "").trim()).filter(Boolean);
+  const teacherKeys = rawTeachers
+    .map((t) => (t?.normalizedLastName || lastNameKey(t?.name ?? "")).trim().toLowerCase())
     .filter(Boolean);
   const loc = (e.locations ?? [])[0];
   const room = (loc?.label ?? loc?.code ?? "").trim() || null;
@@ -31,6 +39,7 @@ export function normalizeEntry(e: SiteEntry): RawEntry {
     title: (e.title ?? "Lezione").trim() || "Lezione",
     activityType: (e.activityType ?? "lesson").trim() || "lesson",
     teachers,
+    teacherKeys,
     room,
     notes: (e.publicNotes ?? "").trim() || null,
     occurrenceId: e.occurrenceId,
@@ -85,6 +94,7 @@ export function mergeEntries(entries: RawEntry[]): Lesson[] {
       title: first.title,
       activityType: first.activityType,
       teachers: first.teachers,
+      teacherKeys: first.teacherKeys,
       room: first.room,
       notes: g.map((e) => e.notes).find((n) => n) ?? null,
       occurrenceIds: g.map((e) => e.occurrenceId),

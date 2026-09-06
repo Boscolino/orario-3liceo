@@ -1,0 +1,24 @@
+{
+  "_nota": "Mappa cognome-docente -> materia. Cognomi in minuscolo, senza accenti. I docenti non elencati restano col cognome come titolo.",
+  "titleTemplate": "Lezione di {materia}",
+
+  "byLastName": {
+    "giovanazzi": "Fisica",
+    "carraro": "Storia",
+    "ercoli": "Religione",
+    "vecchiato": "Inglese",
+    "modonese": "Scienze",
+    "telloli": "Ginnastica",
+    "delugan": "Informatica",
+    "cacciari": "Italiano"
+  },
+
+  "biweekly": {
+    "_nota": "Docenti che alternano due materie a settimane. 'altWeeks' = lunedì (YYYY-MM-DD) delle settimane in cui si fa 'alt'; tutte le altre settimane -> 'default'.",
+    "pontalti": {
+      "default": "Storia dell'arte",
+      "alt": "Disegno tecnico",
+      "altWeeks": []
+    }
+  }
+}

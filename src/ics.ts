@@ -7,6 +7,7 @@ import { join, dirname } from "node:path";
 import { config } from "./config.ts";
 import type { Lesson, StoredState } from "./types.ts";
 import { activityLabel } from "./render.ts";
+import { lessonTitle } from "./subjects.ts";
 
 const ICS_PATH = join(process.cwd(), "docs", "scuola.ics");
 
@@ -73,11 +74,11 @@ function dtUtc(iso: string): string {
 }
 
 function summary(l: Lesson): string {
-  const who = l.teachers.join(" / ");
   if (l.activityType !== "lesson") {
+    const who = l.teachers.join(" / ");
     return who ? `${activityLabel(l.activityType)} · ${who}` : activityLabel(l.activityType);
   }
-  return who || "Lezione";
+  return lessonTitle(l); // "Lezione di Fisica" se nota, altrimenti il cognome
 }
 
 function description(l: Lesson): string {

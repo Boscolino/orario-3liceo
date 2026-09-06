@@ -6,6 +6,7 @@ import { hasChanges } from "./diff.ts";
 import { humanDate } from "./dates.ts";
 import { config } from "./config.ts";
 import { activityLabel } from "./render.ts";
+import { subjectFor } from "./subjects.ts";
 
 // Inizio ora di lezione (minuti da mezzanotte) -> numero dell'ora.
 const ORA_SLOTS = new Map<number, number>([
@@ -19,7 +20,10 @@ function oraLabel(l: Lesson): string {
 }
 
 function who(l: Lesson): string {
-  return l.teachers.join(", ") || "docente n.d.";
+  const subject = subjectFor(l);
+  const teachers = l.teachers.join(", ");
+  if (subject) return teachers ? `${subject} (${teachers})` : subject;
+  return teachers || "docente n.d.";
 }
 
 function where(l: Lesson): string {
@@ -32,15 +36,24 @@ function kind(l: Lesson): string {
 
 function modLine(m: ModifiedLesson): string {
   const day = humanDate(m.after.date);
+  const subjBefore = subjectFor(m.before);
+  const subjAfter = subjectFor(m.after);
   const parts = m.changes.map((c) => {
-    if (c.field === "docente") return `docente ${c.before} → ${c.after}`;
+    if (c.field === "docente") {
+      // se cambia il docente e con lui la materia, il dato utile è la materia
+      if (subjBefore && subjAfter && subjBefore !== subjAfter) {
+        return `${subjBefore} → ${subjAfter} (${c.before} → ${c.after})`;
+      }
+      return `docente ${c.before} → ${c.after}`;
+    }
     if (c.field === "aula") return `aula ${c.before} → ${c.after}`;
     if (c.field === "orario") return `orario ${c.before} → ${c.after}`;
     if (c.field === "giorno") return `spostata ${c.before} → ${c.after}`;
     if (c.field === "tipo") return `tipo ${c.before} → ${c.after}`;
     return `nota: ${c.after}`;
   });
-  return `🔄 ${day}, ${oraLabel(m.after)}: ${parts.join("; ")}`;
+  const prefix = subjAfter && !m.changes.some((c) => c.field === "docente") ? `${subjAfter} — ` : "";
+  return `🔄 ${day}, ${oraLabel(m.after)}: ${prefix}${parts.join("; ")}`;
 }
 
 function addLine(l: Lesson): string {
