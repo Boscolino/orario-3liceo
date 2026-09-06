@@ -113,6 +113,9 @@ export function buildIcs(state: StoredState): IcsResult {
     `X-WR-CALDESC:${esc("Orario " + config.className + " · sincronizzato da orario-3liceo")}`,
     "REFRESH-INTERVAL;VALUE=DURATION:PT1H",
     "X-PUBLISHED-TTL:PT1H",
+    // arancione "scuola" (Apple Calendar lo legge alla prima iscrizione)
+    "COLOR:orange",
+    "X-APPLE-CALENDAR-COLOR:#FF9500",
     ...VTIMEZONE,
   ];
 
