@@ -42,8 +42,8 @@ export const config = {
   timezone: env("TIMEZONE", "Europe/Rome"),
   /** Nome del calendario prodotto (X-WR-CALNAME dell'.ics). */
   calendarName: env("CALENDAR_NAME", "📚 Scuola"),
-  /** Indirizzo della scuola: messo nel campo LOCATION di ogni lezione
-   *  (così Calendario/Mappe sanno dov'è). L'aula viene anteposta. */
+  /** Indirizzo della scuola: è il campo LOCATION di ogni lezione, così
+   *  Calendario/Mappe sanno dov'è. L'aula resta nelle note dell'evento. */
   schoolVenue: env(
     "SCHOOL_VENUE",
     "Scuola Salesiani Rainerum, Piazza Domenicani 15, 39100 Bolzano",
