@@ -9,7 +9,9 @@ import { mondayOf } from "./dates.ts";
 interface Biweekly {
   default: string;
   alt: string;
-  altWeeks: string[]; // lunedì YYYY-MM-DD in cui vale `alt`
+  altWeeks: string[]; // lunedì YYYY-MM-DD in cui vale `alt` (lista esplicita)
+  anchorWeek?: string; // in alternativa: lunedì di riferimento…
+  anchorValue?: "alt" | "default"; // …e cosa si fa in quella settimana; poi alterna
 }
 interface MaterieConfig {
   titleTemplate: string;
@@ -38,6 +40,8 @@ function load(): MaterieConfig {
           default: b.default,
           alt: b.alt,
           altWeeks: Array.isArray(b.altWeeks) ? b.altWeeks : [],
+          anchorWeek: typeof b.anchorWeek === "string" ? b.anchorWeek : undefined,
+          anchorValue: b.anchorValue === "alt" || b.anchorValue === "default" ? b.anchorValue : undefined,
         };
       }
     }
@@ -62,10 +66,23 @@ export function subjectFor(l: Lesson): string | null {
   const week = mondayOf(l.date);
   for (const key of l.teacherKeys) {
     const bw = cfg.biweekly[key];
-    if (bw) return bw.altWeeks.includes(week) ? bw.alt : bw.default;
+    if (bw) return biweeklyValue(bw, week);
     if (cfg.byLastName[key]) return cfg.byLastName[key];
   }
   return null;
+}
+
+function biweeklyValue(bw: Biweekly, week: string): string {
+  if (bw.altWeeks.includes(week)) return bw.alt;
+  if (bw.anchorWeek && bw.anchorValue) {
+    const diff = Math.round(
+      (Date.parse(week + "T12:00:00Z") - Date.parse(bw.anchorWeek + "T12:00:00Z")) / 604_800_000,
+    );
+    const sameParity = ((diff % 2) + 2) % 2 === 0;
+    const onAnchor = bw.anchorValue === "alt";
+    return sameParity === onAnchor ? bw.alt : bw.default;
+  }
+  return bw.default;
 }
 
 /** Titolo dell'evento: "Lezione di Fisica" se la materia è nota, altrimenti il cognome/e. */
