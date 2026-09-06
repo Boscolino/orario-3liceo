@@ -51,6 +51,14 @@ export function allDayMarkersEnabled(): boolean {
   return load().addAllDayMarkers;
 }
 
+/** Tutti i giorni feriali (lun–ven) della settimana sono in vacanza? */
+export function weekFullyHoliday(weekStart: string): boolean {
+  for (let i = 0; i < 5; i++) {
+    if (!holidayOn(addDays(weekStart, i))) return false;
+  }
+  return true;
+}
+
 /** Righe VEVENT (già pronte) per i periodi di vacanza, come eventi tutto-il-giorno. */
 export function holidayMarkerVEvents(escape: (s: string) => string, dtstamp: string): string[] {
   if (!load().addAllDayMarkers) return [];

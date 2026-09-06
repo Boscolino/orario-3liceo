@@ -7,7 +7,7 @@ sull'iPhone, e ti manda una notifica **solo quando qualcosa cambia**.
 ```
 ogni mattina (cron GitHub Actions, ~06:00)
         │
-        ├─ scarica l'orario della settimana corrente e della successiva
+        ├─ scarica ogni settimana pubblicata dal sito (dalla corrente in avanti)
         ├─ lo confronta con la copia salvata nel repo
         ├─ se NON è cambiato nulla  → fine, nessuna notifica
         └─ se è cambiato qualcosa   → rigenera docs/scuola.ics
@@ -110,7 +110,8 @@ per GitHub Actions):
 | `CLASS_SLUG` | `3liceo` | slug della classe nell'URL del sito |
 | `CLASS_NAME` | `3 Liceo` | etichetta per log e notifiche |
 | `SITE_HOST` | `orario.rainerum.delugan.net` | se un domani passa a `orario.rainerum.it`, cambia solo qui |
-| `CHECK_WEEKS` | `2` | quante settimane controllare (corrente + successive) |
+| `CHECK_WEEKS` | `4` | minimo di settimane controllate sempre (corrente + successive) |
+| `MAX_WEEKS` | `45` | tetto di settimane guardate avanti; ci si ferma dopo 3 settimane consecutive non pubblicate |
 | `TIMEZONE` | `Europe/Rome` | |
 | `CALENDAR_NAME` | `📚 Scuola` | nome del calendario nell'`.ics` |
 | `NTFY_TOPIC` | *(vuoto)* | vuoto = notifiche disattivate, solo log |
@@ -158,8 +159,11 @@ comparissero.)
   d'inverno sia d'estate. Il cron può ritardare di qualche minuto.
 - **Latenza calendario**: la sottoscrizione `.ics` è aggiornata da iOS,
   non in tempo reale. La notifica ntfy però arriva subito.
-- **Settimane future**: se la settimana successiva non è ancora
-  pubblicata viene semplicemente ignorata.
+- **Settimane future**: il sito pubblica una settimana per volta. Il
+  sistema guarda avanti finché trova settimane pubblicate (fino a
+  `MAX_WEEKS`), quindi quando esce l'orario definitivo — anche se
+  pubblicato molte settimane in blocco — finisce tutto in calendario da
+  solo. Le settimane non ancora pubblicate vengono ignorate.
 - **Heartbeat**: `state/last-run.txt` viene aggiornato a ogni run e
   committato, così il cron non viene disattivato per inattività.
 - Se il feed `.ics` del sito, quando pubblicheranno più settimane

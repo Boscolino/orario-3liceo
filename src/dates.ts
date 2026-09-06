@@ -37,9 +37,14 @@ export function todayStr(timeZone: string): string {
   }).format(new Date());
 }
 
+/** Lunedì della settimana corrente nel fuso indicato. */
+export function currentMonday(timeZone: string): string {
+  return mondayOf(todayStr(timeZone));
+}
+
 /** Elenco dei lunedì da controllare: corrente + (count-1) successivi. */
 export function weeksToCheck(timeZone: string, count: number): string[] {
-  const start = mondayOf(todayStr(timeZone));
+  const start = currentMonday(timeZone);
   const out: string[] = [];
   for (let i = 0; i < count; i++) out.push(addDays(start, i * 7));
   return out;

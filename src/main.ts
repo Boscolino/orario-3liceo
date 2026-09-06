@@ -8,7 +8,8 @@ import { config } from "./config.ts";
 import { log } from "./log.ts";
 import { fetchWeek } from "./fetch.ts";
 import { renderWeek } from "./render.ts";
-import { weeksToCheck, humanRange, weekEnd } from "./dates.ts";
+import { weeksToCheck, humanRange, weekEnd, currentMonday, addDays } from "./dates.ts";
+import { weekFullyHoliday } from "./holidays.ts";
 import {
   loadState,
   saveState,
@@ -40,25 +41,37 @@ async function cmdCheck(): Promise<void> {
   const state = loadState();
   const cache = loadCache();
   const bootstrap = state.updatedAt === "";
-  const weeks = weeksToCheck(config.timezone, config.checkWeeks);
+  const firstMonday = currentMonday(config.timezone);
 
   log.info(`Controllo orario ${config.className}…`);
   if (bootstrap) log.info("Primo avvio: inizializzo lo stato, nessuna notifica in questo run.");
 
+  // Si guarda avanti finché il sito ha settimane pubblicate: così, appena
+  // esce l'orario definitivo (settimane pubblicate in blocco), finiscono
+  // tutte in calendario. Ci si ferma dopo 3 settimane consecutive non
+  // pubblicate (le vacanze non contano), comunque entro `maxWeeks`.
   const fresh: WeekSchedule[] = [];
-  for (const wk of weeks) {
+  let misses = 0;
+  for (let i = 0; i < config.maxWeeks; i++) {
+    const wk = addDays(firstMonday, i * 7);
+    if (i >= config.checkWeeks && misses >= 3) break;
+    if (weekFullyHoliday(wk)) continue; // settimana di sola vacanza: salta, non conta come "miss"
     try {
       const s = await fetchWeek(wk, cache);
       if (s.publication) {
+        misses = 0;
         log.info(
           `Settimana ${humanRange(wk, weekEnd(wk))}: pubblicazione v${s.publication.version} ` +
             `(${new Date(s.publication.publishedAt).toLocaleString("it-IT", { timeZone: config.timezone })}), ` +
             `${s.lessons.length} lezioni.`,
         );
         fresh.push(s);
+      } else if (!s.notModified) {
+        misses++;
       }
     } catch (err) {
       log.warn(`Settimana ${wk}: ${err instanceof Error ? err.message : String(err)}`);
+      misses++;
     }
   }
 
@@ -69,7 +82,11 @@ async function cmdCheck(): Promise<void> {
     if (hasChanges(d)) diffs.push(d);
     putWeek(state, s);
   }
-  pruneWeeks(state, weeks[0]);
+  pruneWeeks(state, firstMonday);
+  // Settimane di sola vacanza: nessuna lezione in stato (i marker 🏖️ vengono da config).
+  for (const k of Object.keys(state.weeks)) {
+    if (weekFullyHoliday(k)) delete state.weeks[k];
+  }
 
   const changed = diffs.length > 0;
 

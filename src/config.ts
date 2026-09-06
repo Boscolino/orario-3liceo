@@ -32,8 +32,12 @@ export const config = {
   className: env("CLASS_NAME", "3 Liceo"),
   /** Host del sito. In futuro potrebbe diventare orario.rainerum.it. */
   siteHost: env("SITE_HOST", "orario.rainerum.delugan.net"),
-  /** Quante settimane controllare a partire da quella corrente (1 = solo corrente, 2 = corrente + successiva). */
-  checkWeeks: Math.max(1, parseInt(env("CHECK_WEEKS", "2"), 10) || 2),
+  /** Minimo di settimane da controllare sempre, a partire da quella corrente. */
+  checkWeeks: Math.max(1, parseInt(env("CHECK_WEEKS", "4"), 10) || 4),
+  /** Tetto massimo di settimane da guardare avanti (≈ anno scolastico). Ci si
+   *  ferma prima appena si incontrano 3 settimane consecutive non pubblicate
+   *  (che non siano vacanze). */
+  maxWeeks: Math.max(1, parseInt(env("MAX_WEEKS", "45"), 10) || 45),
   /** Fuso orario delle lezioni. */
   timezone: env("TIMEZONE", "Europe/Rome"),
   /** Nome del calendario prodotto (X-WR-CALNAME dell'.ics). */
