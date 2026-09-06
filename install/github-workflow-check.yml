@@ -1,0 +1,53 @@
+name: Controllo orario
+
+on:
+  schedule:
+    # GitHub Actions usa UTC. L'Italia è UTC+1 (inverno) / UTC+2 (estate):
+    # lanciamo sia alle 04:00 che alle 05:00 UTC così un run cade sempre
+    # intorno alle 06:00 locali in entrambe le stagioni. Il secondo run
+    # della mattina, se non ci sono variazioni, non fa nulla.
+    - cron: "0 4 * * 1-5"
+    - cron: "0 5 * * 1-5"
+  workflow_dispatch: {}
+
+# Un solo run alla volta; non annullare quello in corso (potrebbe star committando).
+concurrency:
+  group: controllo-orario
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      CLASS_SLUG: "3liceo"
+      CLASS_NAME: "3 Liceo"
+      SITE_HOST: "orario.rainerum.delugan.net"
+      CHECK_WEEKS: "2"
+      TIMEZONE: "Europe/Rome"
+      CALENDAR_NAME: "📚 Scuola"
+      NTFY_SERVER: "https://ntfy.sh"
+      NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Controllo e sincronizzazione
+        run: node src/main.ts check
+
+      - name: Commit dello stato aggiornato
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A state docs
+          if git diff --staged --quiet; then
+            echo "Nessuna modifica da committare."
+          else
+            git commit -m "orario: aggiornamento $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi

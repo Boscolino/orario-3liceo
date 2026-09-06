@@ -1,0 +1,15 @@
+{
+  "name": "orario-3liceo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Sincronizza l'orario 3 Liceo (orario.rainerum.delugan.net) con un calendario .ics e notifica le variazioni via ntfy.",
+  "engines": {
+    "node": ">=22.6"
+  },
+  "scripts": {
+    "print": "node src/main.ts print",
+    "check": "node src/main.ts check",
+    "selftest": "node src/main.ts selftest"
+  }
+}
