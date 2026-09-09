@@ -1,13 +1,13 @@
 {
   "classSlug": "3liceo",
-  "updatedAt": "2026-09-08T09:26:38.194Z",
+  "updatedAt": "2026-09-09T08:48:59.159Z",
   "weeks": {
     "2026-09-07": {
       "weekStart": "2026-09-07",
       "publication": {
-        "id": "a3fbc5df-cebc-4ed4-b740-b3cd142f449b",
-        "version": 5,
-        "publishedAt": "2026-09-07T14:43:35.945Z",
+        "id": "0c7c9414-2c0d-4de7-bf00-b89decfc28ff",
+        "version": 9,
+        "publishedAt": "2026-09-09T08:48:20.050Z",
         "weekStart": "2026-09-07"
       },
       "lessons": [
