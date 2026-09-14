@@ -137,7 +137,7 @@ async function cmdTestNotify(): Promise<void> {
     title: "📚 Test orario-3liceo",
     body:
       "Notifica di prova: il canale funziona.\n" +
-      "Riceverai un messaggio come questo solo quando l'orario cambia.",
+      "Ogni mattina ne ricevi una: con le variazioni, o \"Orario invariato\" se non cambia nulla.",
   });
   if (outcome.sent) log.info("Notifica di prova inviata.");
   else {
