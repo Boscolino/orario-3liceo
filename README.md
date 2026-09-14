@@ -2,17 +2,18 @@
 
 Sincronizza l'orario della classe **3 Liceo** pubblicato su
 `orario.rainerum.delugan.net` con un calendario che puoi sottoscrivere
-sull'iPhone, e ti manda una notifica **solo quando qualcosa cambia**.
+sull'iPhone, e ti manda **una notifica ogni giorno**: se non è cambiato
+nulla te lo dice, se è cambiato qualcosa ti elenca le variazioni.
 
 ```
 ogni mattina (cron GitHub Actions, ~06:00)
         │
         ├─ scarica ogni settimana pubblicata dal sito (dalla corrente in avanti)
         ├─ lo confronta con la copia salvata nel repo
-        ├─ se NON è cambiato nulla  → fine, nessuna notifica
+        ├─ se NON è cambiato nulla  → notifica "📚 Orario invariato" (una volta al giorno)
         └─ se è cambiato qualcosa   → rigenera docs/scuola.ics
                                       + commit nel repo
-                                      + notifica push su ntfy → iPhone
+                                      + notifica "📚 Orario aggiornato" con le variazioni
 ```
 
 Il tuo iPhone tiene il calendario **📚 Scuola** allineato al file

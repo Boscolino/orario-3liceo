@@ -88,6 +88,14 @@ export interface NotificationText {
   body: string;
 }
 
+/** Notifica giornaliera quando NON ci sono variazioni. */
+export function buildNoChangeNotification(): NotificationText {
+  return {
+    title: "📚 Orario invariato",
+    body: `Nessun cambiamento nell'orario di ${config.className}.`,
+  };
+}
+
 export function buildNotification(diffs: WeekDiff[], calendarUpdated: boolean): NotificationText {
   const n = countChanges(diffs);
   const plural = n === 1 ? "variazione" : "variazioni";

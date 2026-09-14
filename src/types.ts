@@ -59,6 +59,9 @@ export interface StoredState {
   classSlug: string;
   updatedAt: string; // ISO dell'ultimo run che ha scritto
   weeks: Record<string, StoredWeek>; // chiave = weekStart
+  /** Ultima notifica inviata: serve a mandarne una sola al giorno quando
+   *  non ci sono variazioni, anche se il workflow gira più volte (DST). */
+  lastNotification?: { date: string; kind: "none" | "changes" };
 }
 
 export interface StoredWeek {

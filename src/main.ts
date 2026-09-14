@@ -8,7 +8,7 @@ import { config } from "./config.ts";
 import { log } from "./log.ts";
 import { fetchWeek } from "./fetch.ts";
 import { renderWeek } from "./render.ts";
-import { weeksToCheck, humanRange, weekEnd, currentMonday, addDays } from "./dates.ts";
+import { weeksToCheck, humanRange, weekEnd, currentMonday, addDays, todayStr } from "./dates.ts";
 import { weekFullyHoliday } from "./holidays.ts";
 import {
   loadState,
@@ -22,7 +22,7 @@ import {
 } from "./state.ts";
 import { diffWeek, hasChanges, type WeekDiff } from "./diff.ts";
 import { writeIcs } from "./ics.ts";
-import { buildNotification, countChanges, detailLines } from "./summary.ts";
+import { buildNoChangeNotification, buildNotification, countChanges, detailLines } from "./summary.ts";
 import { sendNotification } from "./notify.ts";
 import { runSelftest } from "./selftest.ts";
 import type { HttpCacheMeta, WeekSchedule } from "./types.ts";
@@ -95,18 +95,36 @@ async function cmdCheck(): Promise<void> {
   const ics = writeIcs(state);
   if (bootstrap || changed) log.info(`scuola.ics rigenerato: ${ics.eventCount} eventi.`);
 
-  if (!bootstrap && changed) {
-    log.info("Confronto con la versione precedente:");
-    for (const line of detailLines(diffs)) log.info(`  ${line}`);
-    log.info(`Trovate ${countChanges(diffs)} variazioni.`);
+  // Notifica di ogni giorno: variazioni se ce ne sono, altrimenti conferma
+  // "nessun cambiamento". Il workflow può girare più volte nella stessa
+  // mattina (per l'ora legale): una variazione si notifica sempre, ma la
+  // conferma "nessun cambiamento" al massimo una volta al giorno.
+  // L'unica eccezione è il primo avvio in assoluto, che serve solo a
+  // costruire lo stato di partenza.
+  if (!bootstrap) {
+    const today = todayStr(config.timezone);
+    const alreadyNotifiedToday = state.lastNotification?.date === today;
 
-    const msg = buildNotification(diffs, true);
-    const outcome = await sendNotification(msg);
-    if (outcome.sent) log.info("Notifica inviata.");
-    else log.warn(`Notifica NON inviata (${outcome.reason}).`);
-  } else if (!bootstrap) {
-    log.info("Nessuna variazione.");
-    log.info("Nessuna notifica necessaria.");
+    if (changed) {
+      log.info("Confronto con la versione precedente:");
+      for (const line of detailLines(diffs)) log.info(`  ${line}`);
+      log.info(`Trovate ${countChanges(diffs)} variazioni.`);
+
+      const outcome = await sendNotification(buildNotification(diffs, true));
+      if (outcome.sent) log.info("Notifica inviata.");
+      else log.warn(`Notifica NON inviata (${outcome.reason}).`);
+      state.lastNotification = { date: today, kind: "changes" };
+    } else {
+      log.info("Nessuna variazione.");
+      if (alreadyNotifiedToday) {
+        log.info("Notifica già inviata oggi: non ripeto.");
+      } else {
+        const outcome = await sendNotification(buildNoChangeNotification());
+        if (outcome.sent) log.info("Notifica inviata (nessun cambiamento).");
+        else log.warn(`Notifica NON inviata (${outcome.reason}).`);
+        state.lastNotification = { date: today, kind: "none" };
+      }
+    }
   }
 
   saveState(state);
