@@ -9,7 +9,7 @@ import { log } from "./log.ts";
 import { fetchWeek } from "./fetch.ts";
 import { renderWeek } from "./render.ts";
 import { weeksToCheck, humanRange, weekEnd, currentMonday, addDays, todayStr } from "./dates.ts";
-import { weekFullyHoliday } from "./holidays.ts";
+import { weekFullyHoliday, termBounds } from "./holidays.ts";
 import {
   loadState,
   saveState,
@@ -17,7 +17,7 @@ import {
   saveCache,
   storedWeek,
   putWeek,
-  pruneWeeks,
+  pruneWeeksOutsideTerm,
   writeHeartbeat,
 } from "./state.ts";
 import { diffWeek, hasChanges, type WeekDiff } from "./diff.ts";
@@ -45,6 +45,27 @@ async function cmdCheck(): Promise<void> {
 
   log.info(`Controllo orario ${config.className}…`);
   if (bootstrap) log.info("Primo avvio: inizializzo lo stato, nessuna notifica in questo run.");
+
+  // Le settimane passate restano in calendario per sempre: se una manca
+  // dallo stato (es. un vecchio bug, o un run saltato) e il sito la serve
+  // ancora, la recuperiamo qui — senza generare variazioni/notifiche,
+  // è solo un ripristino silenzioso.
+  const term = termBounds();
+  const backfillFrom = term.start && term.start > firstMonday ? null : term.start;
+  if (backfillFrom) {
+    for (let wk = backfillFrom; wk < firstMonday; wk = addDays(wk, 7)) {
+      if (state.weeks[wk] || weekFullyHoliday(wk)) continue;
+      try {
+        const s = await fetchWeek(wk, cache);
+        if (s.publication) {
+          putWeek(state, s);
+          log.info(`Settimana ${humanRange(wk, weekEnd(wk))}: ripristinata (mancava dallo stato).`);
+        }
+      } catch (err) {
+        log.warn(`Ripristino settimana ${wk}: ${err instanceof Error ? err.message : String(err)}`);
+      }
+    }
+  }
 
   // Si guarda avanti finché il sito ha settimane pubblicate: così, appena
   // esce l'orario definitivo (settimane pubblicate in blocco), finiscono
@@ -82,7 +103,10 @@ async function cmdCheck(): Promise<void> {
     if (hasChanges(d)) diffs.push(d);
     putWeek(state, s);
   }
-  pruneWeeks(state, firstMonday);
+  // Le settimane passate NON vengono tolte dal calendario: restano per
+  // sempre una volta pubblicate. Puliamo solo eventuali avanzi fuori
+  // dall'anno scolastico configurato (config/vacanze.json).
+  pruneWeeksOutsideTerm(state, term.start, term.end);
   // Settimane di sola vacanza: nessuna lezione in stato (i marker 🏖️ vengono da config).
   for (const k of Object.keys(state.weeks)) {
     if (weekFullyHoliday(k)) delete state.weeks[k];

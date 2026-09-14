@@ -71,9 +71,16 @@ export function putWeek(state: StoredState, w: WeekSchedule): void {
   };
 }
 
-/** Rimuove dallo stato le settimane troppo vecchie (prima di `keepFrom`). */
-export function pruneWeeks(state: StoredState, keepFrom: string): void {
+/**
+ * Rimuove dallo stato solo le settimane fuori dall'anno scolastico
+ * (`[from, to]`, entrambi opzionali). Le lezioni passate NON vengono mai
+ * tolte dal calendario in base alla data odierna: una volta pubblicate
+ * restano lì, come richiesto — l'unico scopo qui è non accumulare avanzi
+ * di anni scolastici precedenti.
+ */
+export function pruneWeeksOutsideTerm(state: StoredState, from: string | null, to: string | null): void {
+  if (!from && !to) return;
   for (const k of Object.keys(state.weeks)) {
-    if (k < keepFrom) delete state.weeks[k];
+    if ((from && k < from) || (to && k > to)) delete state.weeks[k];
   }
 }

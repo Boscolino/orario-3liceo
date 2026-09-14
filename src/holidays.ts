@@ -14,6 +14,8 @@ export interface Break {
 interface VacanzeConfig {
   addAllDayMarkers: boolean;
   breaks: Break[];
+  termStart: string | null;
+  termEnd: string | null;
 }
 
 let cache: VacanzeConfig | null = null;
@@ -21,7 +23,7 @@ let cache: VacanzeConfig | null = null;
 function load(): VacanzeConfig {
   if (cache) return cache;
   const path = join(process.cwd(), "config", "vacanze.json");
-  const empty: VacanzeConfig = { addAllDayMarkers: false, breaks: [] };
+  const empty: VacanzeConfig = { addAllDayMarkers: false, breaks: [], termStart: null, termEnd: null };
   if (!existsSync(path)) {
     cache = empty;
     return cache;
@@ -32,11 +34,22 @@ function load(): VacanzeConfig {
       .filter((b): b is Break => Boolean(b && b.name && b.from && b.to))
       .map((b) => ({ name: b.name, from: b.from, to: b.to }))
       .sort((a, b) => a.from.localeCompare(b.from));
-    cache = { addAllDayMarkers: raw.addAllDayMarkers === true, breaks };
+    cache = {
+      addAllDayMarkers: raw.addAllDayMarkers === true,
+      breaks,
+      termStart: typeof raw.termStart === "string" ? raw.termStart : null,
+      termEnd: typeof raw.termEnd === "string" ? raw.termEnd : null,
+    };
   } catch {
     cache = empty;
   }
   return cache;
+}
+
+/** Inizio/fine dell'anno scolastico (per non buttare via, per errore, settimane fuori range). */
+export function termBounds(): { start: string | null; end: string | null } {
+  const c = load();
+  return { start: c.termStart, end: c.termEnd };
 }
 
 /** Il giorno `date` è in vacanza? Ritorna il periodo, oppure null. */
