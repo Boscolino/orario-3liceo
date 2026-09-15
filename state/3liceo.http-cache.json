@@ -9,13 +9,13 @@
     "fetchedAt": "2026-09-07T10:01:05.679Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-09-14/classi/3liceo?giorno=2026-09-14&scuola=media": {
-    "fetchedAt": "2026-09-15T09:17:05.909Z"
+    "fetchedAt": "2026-09-15T09:51:05.768Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-09-21/classi/3liceo?giorno=2026-09-21&scuola=media": {
-    "fetchedAt": "2026-09-15T09:17:07.968Z"
+    "fetchedAt": "2026-09-15T09:51:08.189Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-09-28/classi/3liceo?giorno=2026-09-28&scuola=media": {
-    "fetchedAt": "2026-09-15T09:17:09.527Z"
+    "fetchedAt": "2026-09-15T09:51:09.909Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/a3fbc5df-cebc-4ed4-b740-b3cd142f449b/json?class=3liceo": {
     "fetchedAt": "2026-09-08T09:26:37.320Z"
@@ -27,18 +27,18 @@
     "fetchedAt": "2026-09-11T09:25:25.762Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-10-05/classi/3liceo?giorno=2026-10-05&scuola=media": {
-    "fetchedAt": "2026-09-15T09:17:09.643Z"
+    "fetchedAt": "2026-09-15T09:51:10.077Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/a4ed64e6-eeba-4a3d-bb61-8a96f6f85a0e/json?class=3liceo": {
-    "fetchedAt": "2026-09-15T09:17:07.351Z"
+    "fetchedAt": "2026-09-15T09:51:07.349Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/7df36f3a-fe74-4161-af87-da80c8bffb52/json?class=3liceo": {
     "fetchedAt": "2026-09-14T11:03:27.157Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-10-12/classi/3liceo?giorno=2026-10-12&scuola=media": {
-    "fetchedAt": "2026-09-15T09:17:09.758Z"
+    "fetchedAt": "2026-09-15T09:51:10.246Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/5570f1a9-b934-41db-9ce2-4d35f2d8e5f1/json?class=3liceo": {
-    "fetchedAt": "2026-09-15T09:17:09.410Z"
+    "fetchedAt": "2026-09-15T09:51:09.732Z"
   }
 }
