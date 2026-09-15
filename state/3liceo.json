@@ -1,6 +1,6 @@
 {
   "classSlug": "3liceo",
-  "updatedAt": "2026-09-14T11:03:27.593Z",
+  "updatedAt": "2026-09-15T09:17:09.806Z",
   "weeks": {
     "2026-09-14": {
       "weekStart": "2026-09-14",
@@ -460,9 +460,9 @@
     "2026-09-21": {
       "weekStart": "2026-09-21",
       "publication": {
-        "id": "7df36f3a-fe74-4161-af87-da80c8bffb52",
-        "version": 1,
-        "publishedAt": "2026-09-14T09:54:41.667Z",
+        "id": "5570f1a9-b934-41db-9ce2-4d35f2d8e5f1",
+        "version": 3,
+        "publishedAt": "2026-09-14T18:46:32.204Z",
         "weekStart": "2026-09-21"
       },
       "lessons": [
@@ -878,10 +878,10 @@
           "title": "Lezione",
           "activityType": "lesson",
           "teachers": [
-            "Kevin Delugan"
+            "Andrea Telloli"
           ],
           "teacherKeys": [
-            "delugan"
+            "telloli"
           ],
           "room": "3LSA",
           "notes": null,
@@ -889,8 +889,8 @@
             "ffcaf20d-9c4a-41b0-b832-aec280ce946f",
             "25351f15-a146-4221-b585-c6babcd2feff"
           ],
-          "baselineStatus": "base",
-          "isVariation": false,
+          "baselineStatus": "modified",
+          "isVariation": true,
           "hasSubstitution": false
         },
         {
@@ -1376,7 +1376,7 @@
     }
   },
   "lastNotification": {
-    "date": "2026-09-14",
+    "date": "2026-09-15",
     "kind": "changes"
   }
 }
