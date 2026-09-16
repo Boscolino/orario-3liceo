@@ -1,6 +1,6 @@
 {
   "classSlug": "3liceo",
-  "updatedAt": "2026-09-16T07:18:25.840Z",
+  "updatedAt": "2026-09-16T07:25:43.368Z",
   "weeks": {
     "2026-09-14": {
       "weekStart": "2026-09-14",
@@ -34,7 +34,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": true
         },
         {
           "uid": "0314b691-21ad-417c-8158-a0e6677c198d",
@@ -59,7 +60,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "b91e2358-4b32-4299-aede-6aed6baec6cd",
@@ -84,7 +86,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "52276702-fd81-49e2-9e53-04d0b8edde58",
@@ -108,7 +111,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": true
         },
         {
           "uid": "5a2e6ea2-d3c9-46e4-88f9-83fa785c7a19",
@@ -132,7 +136,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "fa9d2937-a219-44e7-91a8-36f4357ea6e8",
@@ -157,7 +162,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "ac9f8064-e3c8-47ac-8810-f945152b0215",
@@ -182,7 +188,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "1cbccd6d-1e3c-4921-b98f-ac7801b6c436",
@@ -206,7 +213,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": true
         },
         {
           "uid": "f8ef3fce-44e0-4d5c-8d44-e2e87741d5cf",
@@ -230,7 +238,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "a4ff5fa8-9741-4933-a3cb-463feb71c4f9",
@@ -254,7 +263,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "433392ac-a879-4bd1-8019-f68e0c06dd70",
@@ -278,7 +288,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "f45910a9-d9f2-4a73-8256-e26adddf2cd9",
@@ -303,7 +314,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "720b34b5-895d-4596-8025-36f36f6a1d00",
@@ -328,7 +340,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": true
         },
         {
           "uid": "6245143d-2d19-4e67-8520-a7b0073d204d",
@@ -353,7 +366,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "4a03722f-f033-4906-9bf4-851237201b37",
@@ -378,7 +392,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "cc1d9f2d-5c59-467c-adda-7604c198e8b4",
@@ -403,7 +418,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": true
         },
         {
           "uid": "d3755e87-11cf-42de-b753-f134104e20bd",
@@ -428,7 +444,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "0926fd11-a75d-43d3-aa80-e95c9eb35bcb",
@@ -453,7 +470,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         }
       ]
     },
@@ -489,7 +507,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": true
         },
         {
           "uid": "81030990-fb18-4988-ba8d-f0c45d243166",
@@ -514,7 +533,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "1aaeb20c-d2c7-4584-aa20-735a3c93091a",
@@ -539,7 +559,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "fdfdc2f9-6fa9-423b-8bb4-d3bde0f11749",
@@ -568,7 +589,8 @@
           ],
           "baselineStatus": "modified",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "ec203ac0-419d-44de-8c0a-ae5ff28f47a7",
@@ -592,7 +614,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": true
         },
         {
           "uid": "3cfe1a64-39db-4b78-b997-c5246101cdab",
@@ -616,7 +639,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "9c8347be-5e5b-41f1-b86b-6b8aca88a053",
@@ -641,7 +665,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "05a2304a-7f27-41ee-a99f-ded2b3c20f69",
@@ -666,7 +691,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "7d4edce5-b42b-453d-bffd-934988bf91ff",
@@ -690,7 +716,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": true
         },
         {
           "uid": "e52ee27c-88c8-4373-bfc9-5bc89efcdb29",
@@ -714,7 +741,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "8dbc7172-daee-43b9-8a29-b29811a6c10b",
@@ -738,7 +766,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "4d16d1c1-2cb8-45e3-99b2-fefe9245024a",
@@ -762,7 +791,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "f5b298fb-dd1e-43d3-a5c0-557d84de387e",
@@ -787,7 +817,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "9cf3893a-f41e-48c5-970c-d9694f1d8834",
@@ -816,7 +847,8 @@
           ],
           "baselineStatus": "modified",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "a68f6b97-65f2-409c-8844-321dd31cb768",
@@ -841,7 +873,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": true
         },
         {
           "uid": "206fd9bd-1cbc-47e4-a176-19f04db7be83",
@@ -866,7 +899,8 @@
           ],
           "baselineStatus": "modified",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "ffcaf20d-9c4a-41b0-b832-aec280ce946f",
@@ -891,7 +925,8 @@
           ],
           "baselineStatus": "modified",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "a85ab236-56fa-48e2-99e5-14742340344e",
@@ -916,7 +951,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": true
         },
         {
           "uid": "e2b19a5a-1c28-4be3-995e-5cbbff21ca43",
@@ -941,7 +977,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "3970fa3e-7fca-40b5-88a2-15e24d1fec14",
@@ -966,7 +1003,8 @@
           ],
           "baselineStatus": "base",
           "isVariation": false,
-          "hasSubstitution": false
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         }
       ]
     },
