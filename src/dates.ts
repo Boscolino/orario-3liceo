@@ -57,6 +57,11 @@ export function weeksToCheck(timeZone: string, count: number): string[] {
   return out;
 }
 
+/** "2026-09-18" -> true (è un venerdì). */
+export function isFriday(dateStr: string): boolean {
+  return atNoonUTC(dateStr).getUTCDay() === 5;
+}
+
 /** Venerdì della settimana (weekStart = lunedì). */
 export function weekEnd(weekStart: string): string {
   return addDays(weekStart, 4);

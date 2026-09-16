@@ -32,6 +32,7 @@ export interface Lesson {
   room: string | null;
   notes: string | null;
   occurrenceIds: string[]; // tutti i blocchi che compongono la lezione
+  isFirstOfDay: boolean; // il blocco che apre la giornata (usato per le verifiche del venerdì)
   baselineStatus: string; // "modified" se almeno un blocco è modified
   isVariation: boolean; // true se almeno un blocco è variazione
   hasSubstitution: boolean;

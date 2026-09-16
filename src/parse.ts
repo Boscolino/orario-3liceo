@@ -81,9 +81,14 @@ export function mergeEntries(entries: RawEntry[]): Lesson[] {
   }
 
   const lessons: Lesson[] = [];
+  const seenDates = new Set<string>();
   for (const g of groups) {
     const first = g[0];
     const last = g[g.length - 1];
+    // I gruppi arrivano già ordinati per (date, startMinute): il primo
+    // gruppo di una data mai vista prima è il blocco che apre la giornata.
+    const isFirstOfDay = !seenDates.has(first.date);
+    seenDates.add(first.date);
     lessons.push({
       uid: g[0].occurrenceId,
       date: first.date,
@@ -101,6 +106,7 @@ export function mergeEntries(entries: RawEntry[]): Lesson[] {
       baselineStatus: g.some((e) => e.baselineStatus === "modified") ? "modified" : "base",
       isVariation: g.some((e) => e.isVariation),
       hasSubstitution: g.some((e) => e.hasSubstitution),
+      isFirstOfDay,
     });
   }
   lessons.sort((a, b) => a.date.localeCompare(b.date) || a.startMinute - b.startMinute);

@@ -34,6 +34,7 @@ function L(
     baselineStatus: "base",
     isVariation: false,
     hasSubstitution: false,
+    isFirstOfDay: false,
     ...extra,
   };
 }

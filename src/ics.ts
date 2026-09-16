@@ -8,6 +8,7 @@ import { config } from "./config.ts";
 import type { Lesson, StoredState } from "./types.ts";
 import { activityLabel } from "./render.ts";
 import { lessonTitle } from "./subjects.ts";
+import { verificaOverride } from "./verifiche.ts";
 import { holidayMarkerVEvents } from "./holidays.ts";
 
 const ICS_PATH = join(process.cwd(), "docs", "scuola.ics");
@@ -75,6 +76,8 @@ function dtUtc(iso: string): string {
 }
 
 function summary(l: Lesson): string {
+  const verifica = verificaOverride(l);
+  if (verifica) return verifica;
   if (l.activityType !== "lesson") {
     const who = l.teachers.join(" / ");
     return who ? `${activityLabel(l.activityType)} · ${who}` : activityLabel(l.activityType);

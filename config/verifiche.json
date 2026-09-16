@@ -1,0 +1,4 @@
+{
+  "_nota": "Verifiche del venerdì. Chiave = venerdì (YYYY-MM-DD), valore = testo da mostrare al posto della lezione normale nel PRIMO blocco di quel venerdì (es. 'Verifica di Matematica'). Le altre ore del venerdì e gli altri giorni non sono toccati. Vuoto finché non arriva il calendario delle verifiche.",
+  "venerdi": {}
+}

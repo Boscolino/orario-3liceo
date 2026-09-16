@@ -7,6 +7,7 @@ import { humanDate } from "./dates.ts";
 import { config } from "./config.ts";
 import { activityLabel } from "./render.ts";
 import { subjectFor } from "./subjects.ts";
+import { verificaOverride } from "./verifiche.ts";
 
 // Inizio ora di lezione (minuti da mezzanotte) -> numero dell'ora.
 const ORA_SLOTS = new Map<number, number>([
@@ -20,7 +21,7 @@ function oraLabel(l: Lesson): string {
 }
 
 function who(l: Lesson): string {
-  const subject = subjectFor(l);
+  const subject = verificaOverride(l) ?? subjectFor(l);
   const teachers = l.teachers.join(", ");
   if (subject) return teachers ? `${subject} (${teachers})` : subject;
   return teachers || "docente n.d.";
@@ -36,8 +37,8 @@ function kind(l: Lesson): string {
 
 function modLine(m: ModifiedLesson): string {
   const day = humanDate(m.after.date);
-  const subjBefore = subjectFor(m.before);
-  const subjAfter = subjectFor(m.after);
+  const subjBefore = verificaOverride(m.before) ?? subjectFor(m.before);
+  const subjAfter = verificaOverride(m.after) ?? subjectFor(m.after);
   const parts = m.changes.map((c) => {
     if (c.field === "docente") {
       // se cambia il docente e con lui la materia, il dato utile è la materia

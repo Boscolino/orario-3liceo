@@ -180,6 +180,21 @@ calendario. Preimpostate: `banda`, `oboe`. (Nota: la sorgente della classe
 3 Liceo non contiene queste attività; il filtro è un paracadute nel caso
 comparissero.)
 
+## Verifiche del venerdì (config/verifiche.json)
+
+Nel **primo blocco di ogni venerdì**, se quella data è elencata in
+`venerdi`, al posto della lezione normale viene mostrato il testo della
+verifica (titolo evento + nella riga di terminale); docente e aula
+restano quelli reali di quell'ora.
+
+```json
+{ "venerdi": { "2026-09-18": "Verifica di Matematica" } }
+```
+
+Le altre ore del venerdì e gli altri giorni non sono toccati. Vuoto
+finché non arriva il calendario delle verifiche: aggiungi le date lì,
+commit & push, e al controllo successivo compaiono in calendario.
+
 ## Cosa NON fa / limiti noti
 
 - **Materia**: ricavata dal docente via `config/materie.json` (vedi sopra);

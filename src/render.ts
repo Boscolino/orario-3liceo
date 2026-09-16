@@ -4,6 +4,7 @@ import type { Lesson, WeekSchedule } from "./types.ts";
 import { humanDate, humanRange, weekEnd } from "./dates.ts";
 import { config } from "./config.ts";
 import { subjectFor } from "./subjects.ts";
+import { verificaOverride } from "./verifiche.ts";
 
 const ACTIVITY_LABEL: Record<string, string> = {
   lesson: "Lezione",
@@ -22,7 +23,7 @@ export function activityLabel(type: string): string {
 
 /** Riga compatta di una lezione. */
 export function lessonLine(l: Lesson): string {
-  const subject = subjectFor(l);
+  const subject = verificaOverride(l) ?? subjectFor(l);
   const teachers = l.teachers.join(", ");
   const who = subject
     ? `${subject}${teachers ? ` (${teachers})` : ""}`
