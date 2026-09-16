@@ -2,19 +2,25 @@
 
 Sincronizza l'orario della classe **3 Liceo** pubblicato su
 `orario.rainerum.delugan.net` con un calendario che puoi sottoscrivere
-sull'iPhone, e ti manda **una notifica ogni giorno**: se non è cambiato
-nulla te lo dice, se è cambiato qualcosa ti elenca le variazioni.
+sull'iPhone, e ti notifica le variazioni. Due modalità, un solo workflow:
 
 ```
-ogni mattina (cron GitHub Actions, ~06:00)
-        │
-        ├─ scarica ogni settimana pubblicata dal sito (dalla corrente in avanti)
-        ├─ lo confronta con la copia salvata nel repo
-        ├─ se NON è cambiato nulla  → notifica "📚 Orario invariato" (una volta al giorno)
-        └─ se è cambiato qualcosa   → rigenera docs/scuola.ics
-                                      + commit nel repo
-                                      + notifica "📚 Orario aggiornato" con le variazioni
+alle 06:00 (mattina)              07:00-13:00 ogni ora, +16:00, 18:00, 21:00
+        │                                        │
+        ├─ scarica ogni settimana                ├─ stesso controllo
+        │  pubblicata dal sito                   │
+        ├─ confronta con la copia salvata        ├─ se NON è cambiato nulla
+        ├─ se NON è cambiato nulla                │  → nessuna notifica, silenzio
+        │  → notifica "📚 Orario invariato"       │
+        └─ se è cambiato qualcosa                 └─ se è cambiato qualcosa
+           → rigenera docs/scuola.ics                → rigenera docs/scuola.ics
+           → commit nel repo                          → commit nel repo
+           → notifica "📚 Orario aggiornato"           → notifica "📚 Orario aggiornato"
 ```
+
+Un solo cron gira ogni ora (`src/main.ts check auto` decide da solo, in
+base all'ora locale Europe/Rome, se è il controllo del mattino o uno dei
+controlli successivi — dettagli più sotto in "Modalità del controllo").
 
 Il tuo iPhone tiene il calendario **📚 Scuola** allineato al file
 `docs/scuola.ics` servito da GitHub Pages. Il Mac non serve: gira tutto
@@ -85,12 +91,32 @@ Comparirà il calendario **📚 Scuola – 3 Liceo**. iOS lo aggiorna da
 solo (di norma ogni poche ore; puoi forzare con "Aggiorna calendari"
 tirando giù la lista dei calendari).
 
+## Modalità del controllo
+
+`node src/main.ts check [modo]`:
+
+| Modo | Quando | Se NON cambia nulla | Se cambia qualcosa |
+|---|---|---|---|
+| `morning` (default) | alle 06:00 (`MORNING_HOUR`) | notifica "📚 Orario invariato" (una volta al giorno) | notifica le variazioni |
+| `daytime` | 07:00-13:00 ogni ora, poi 16:00, 18:00, 21:00 (`DAYTIME_HOURS`) | **nessuna notifica**, silenzio | notifica le variazioni |
+| `auto` | usato dal cron | sceglie da solo `morning`/`daytime`/niente in base all'ora locale Europe/Rome | — |
+
+Un cron GitHub Actions solo (ogni ora) con `check auto` copre tutte le
+fasce: alle 06:00 fa il controllo del mattino, dalle 07:00 alle 13:00 —
+più un controllo alle 16:00, 18:00 e 21:00 — il controllo "silenzioso",
+il resto della giornata non fa nulla (niente chiamate al sito). Così, se
+durante le lezioni (o in serata) viene pubblicata una supplenza, la
+ricevi entro un'ora — ma non vieni disturbato se non cambia niente. Le
+ore esatte si cambiano con `MORNING_HOUR` / `DAYTIME_HOURS` (vedi
+Configurazione), senza toccare il codice.
+
 ## Uso locale (facoltativo)
 
 ```bash
 cp .env.example .env             # opzionale: personalizza le variabili
 npm run print                    # stampa l'orario, non scrive nulla
-npm run check                    # fa un ciclo completo (stato, .ics, notifica)
+npm run check                    # ciclo completo, modo "morning" (notifica sempre)
+node src/main.ts check daytime   # come sopra, ma notifica solo se ci sono variazioni
 npm run selftest                 # verifica confronto + .ics su dati simulati
 node src/main.ts test-notify     # invia una notifica di prova su ntfy
 ```
@@ -114,6 +140,8 @@ per GitHub Actions):
 | `CHECK_WEEKS` | `4` | minimo di settimane controllate sempre (corrente + successive) |
 | `MAX_WEEKS` | `45` | tetto di settimane guardate avanti; ci si ferma dopo 3 settimane consecutive non pubblicate |
 | `TIMEZONE` | `Europe/Rome` | |
+| `MORNING_HOUR` | `6` | ora locale del controllo che notifica sempre |
+| `DAYTIME_HOURS` | `7,8,9,10,11,12,13,16,18,21` | ore locali dei controlli che notificano solo le variazioni |
 | `CALENDAR_NAME` | `📚 Scuola` | nome del calendario nell'`.ics` |
 | `SCHOOL_VENUE` | `Scuola Salesiani Rainerum, Piazza Domenicani 15, 39100 Bolzano` | campo Luogo di ogni lezione (l'aula resta nelle note) |
 | `NTFY_TOPIC` | *(vuoto)* | vuoto = notifiche disattivate, solo log |
@@ -156,9 +184,11 @@ comparissero.)
 
 - **Materia**: ricavata dal docente via `config/materie.json` (vedi sopra);
   dove il docente non è mappato resta il cognome.
-- **Orari cron e ora legale**: GitHub Actions usa UTC; il workflow lancia
-  alle 04:00 e alle 05:00 UTC per cadere vicino alle 06:00 locali sia
-  d'inverno sia d'estate. Il cron può ritardare di qualche minuto.
+- **Orari cron e ora legale**: GitHub Actions usa UTC; il cron gira ogni
+  ora (04:00-12:00 UTC) ed è `check auto` a decidere il da farsi in base
+  all'ora locale Europe/Rome, quindi resta corretto sia d'inverno sia
+  d'estate senza bisogno di cron diversi per stagione. Il cron può
+  comunque ritardare di qualche minuto.
 - **Latenza calendario**: la sottoscrizione `.ics` è aggiornata da iOS,
   non in tempo reale. La notifica ntfy però arriva subito.
 - **Settimane future**: il sito pubblica una settimana per volta. Il

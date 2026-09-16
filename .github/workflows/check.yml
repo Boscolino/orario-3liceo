@@ -2,12 +2,15 @@ name: Controllo orario
 
 on:
   schedule:
-    # GitHub Actions usa UTC. L'Italia è UTC+1 (inverno) / UTC+2 (estate):
-    # lanciamo sia alle 04:00 che alle 05:00 UTC così un run cade sempre
-    # intorno alle 06:00 locali in entrambe le stagioni. Il secondo run
-    # della mattina, se non ci sono variazioni, non fa nulla.
-    - cron: "0 4 * * 1-5"
-    - cron: "0 5 * * 1-5"
+    # GitHub Actions usa UTC. Giriamo ogni ora, un po' più spesso del
+    # necessario, e lasciamo decidere allo script (src/main.ts, modo
+    # "auto") cosa fare in base all'ora locale Europe/Rome — così il
+    # comportamento resta corretto sia con l'ora solare che legale:
+    #   06 locali                  -> controllo del mattino, notifica sempre
+    #   07-13, 16, 18, 21 locali   -> controllo che notifica solo variazioni
+    #   fuori da queste ore        -> lo script non fa nulla (nessuna chiamata al sito)
+    # (le ore esatte sono in MORNING_HOUR / DAYTIME_HOURS più sotto)
+    - cron: "0 4-20 * * 1-5"
   workflow_dispatch:
     inputs:
       test_notification:
@@ -33,6 +36,8 @@ jobs:
       CHECK_WEEKS: "4"
       MAX_WEEKS: "45"
       TIMEZONE: "Europe/Rome"
+      MORNING_HOUR: "6"
+      DAYTIME_HOURS: "7,8,9,10,11,12,13,16,18,21"
       CALENDAR_NAME: "📚 Scuola"
       NTFY_SERVER: "https://ntfy.sh"
       NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
@@ -43,9 +48,13 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Controllo e sincronizzazione
-        if: ${{ inputs.test_notification != true }}
-        run: node src/main.ts check
+      - name: Controllo e sincronizzazione (automatico)
+        if: ${{ inputs.test_notification != true && github.event_name == 'schedule' }}
+        run: node src/main.ts check auto
+
+      - name: Controllo e sincronizzazione (manuale)
+        if: ${{ inputs.test_notification != true && github.event_name != 'schedule' }}
+        run: node src/main.ts check morning
 
       - name: Notifica di prova
         if: ${{ inputs.test_notification == true }}

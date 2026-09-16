@@ -40,6 +40,16 @@ export const config = {
   maxWeeks: Math.max(1, parseInt(env("MAX_WEEKS", "45"), 10) || 45),
   /** Fuso orario delle lezioni. */
   timezone: env("TIMEZONE", "Europe/Rome"),
+  /** Ora locale del controllo "mattina" (notifica sempre, anche se nulla cambia). */
+  morningHour: Math.max(0, Math.min(23, parseInt(env("MORNING_HOUR", "6"), 10) || 6)),
+  /** Ore locali dei controlli "pomeriggio/sera" (notificano solo se ci sono
+   *  variazioni): orario scolastico a cadenza oraria + qualche controllo extra. */
+  daytimeHours: new Set(
+    env("DAYTIME_HOURS", "7,8,9,10,11,12,13,16,18,21")
+      .split(",")
+      .map((s) => parseInt(s.trim(), 10))
+      .filter((n) => Number.isInteger(n) && n >= 0 && n <= 23),
+  ),
   /** Nome del calendario prodotto (X-WR-CALNAME dell'.ics). */
   calendarName: env("CALENDAR_NAME", "📚 Scuola"),
   /** Indirizzo della scuola: è il campo LOCATION di ogni lezione, così

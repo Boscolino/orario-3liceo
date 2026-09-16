@@ -1,14 +1,18 @@
 // Punto di ingresso.
 //
-//   node src/main.ts print     recupera e stampa l'orario (nessuna scrittura)
-//   node src/main.ts check      il controllo delle 06:00: confronto, .ics, notifica
-//   node src/main.ts selftest   prova il confronto/notifica su dati simulati
+//   node src/main.ts print               recupera e stampa l'orario (nessuna scrittura)
+//   node src/main.ts check [modo]        il controllo: confronto, .ics, notifica
+//     modo = morning (default)  -> notifica sempre (variazioni, o "invariato")
+//            daytime            -> notifica SOLO se ci sono variazioni
+//            auto               -> decide da solo in base all'ora locale
+//                                  (06 -> morning, 07-13 -> daytime, altrimenti non fa nulla)
+//   node src/main.ts selftest            prova il confronto/notifica su dati simulati
 //
 import { config } from "./config.ts";
 import { log } from "./log.ts";
 import { fetchWeek } from "./fetch.ts";
 import { renderWeek } from "./render.ts";
-import { weeksToCheck, humanRange, weekEnd, currentMonday, addDays, todayStr } from "./dates.ts";
+import { weeksToCheck, humanRange, weekEnd, currentMonday, addDays, todayStr, localHour } from "./dates.ts";
 import { weekFullyHoliday, termBounds } from "./holidays.ts";
 import {
   loadState,
@@ -37,7 +41,36 @@ async function cmdPrint(): Promise<void> {
   console.log("");
 }
 
-async function cmdCheck(): Promise<void> {
+type CheckMode = "morning" | "daytime";
+
+/**
+ * In modalità "auto" (usata dal cron), decide da sola cosa fare in base
+ * all'ora locale: a `config.morningHour` è il controllo del mattino
+ * (notifica sempre), alle ore in `config.daytimeHours` è un controllo che
+ * notifica solo se ci sono variazioni, fuori da queste ore non fa nulla —
+ * il cron gira più spesso del necessario apposta, per restare corretto
+ * col cambio d'ora legale.
+ */
+function resolveMode(arg: string | undefined): CheckMode | null {
+  if (arg === "daytime") return "daytime";
+  if (arg === "morning" || arg === undefined) return "morning";
+  if (arg === "auto") {
+    const h = localHour(config.timezone);
+    if (h === config.morningHour) return "morning";
+    if (config.daytimeHours.has(h)) return "daytime";
+    return null;
+  }
+  throw new Error(`Modo sconosciuto: ${arg} (usa morning, daytime o auto)`);
+}
+
+async function cmdCheck(modeArg: string | undefined): Promise<void> {
+  const mode = resolveMode(modeArg);
+  if (!mode) {
+    log.info(`Fuori dalla finestra di controllo (ora locale ${localHour(config.timezone)}): non faccio nulla.`);
+    return;
+  }
+  log.info(`Modalità: ${mode === "morning" ? "mattina (notifica sempre)" : "pomeriggio (notifica solo variazioni)"}.`);
+
   const state = loadState();
   const cache = loadCache();
   const bootstrap = state.updatedAt === "";
@@ -140,7 +173,9 @@ async function cmdCheck(): Promise<void> {
       state.lastNotification = { date: today, kind: "changes" };
     } else {
       log.info("Nessuna variazione.");
-      if (alreadyNotifiedToday) {
+      if (mode === "daytime") {
+        log.info("Modalità pomeriggio: nessuna notifica quando non ci sono variazioni.");
+      } else if (alreadyNotifiedToday) {
         log.info("Notifica già inviata oggi: non ripeto.");
       } else {
         const outcome = await sendNotification(buildNoChangeNotification());
@@ -172,7 +207,7 @@ async function cmdTestNotify(): Promise<void> {
 
 const commands: Record<string, () => Promise<void>> = {
   print: cmdPrint,
-  check: cmdCheck,
+  check: () => cmdCheck(process.argv[3]),
   selftest: async () => runSelftest(),
   "test-notify": cmdTestNotify,
 };

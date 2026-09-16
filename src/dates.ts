@@ -26,6 +26,13 @@ export function mondayOf(dateStr: string): string {
   return toDateStr(new Date(d.getTime() + delta * DAY_MS));
 }
 
+/** Ora locale corrente (0-23) nel fuso indicato. */
+export function localHour(timeZone: string): number {
+  return Number(
+    new Intl.DateTimeFormat("en-GB", { timeZone, hour: "2-digit", hour12: false }).format(new Date()),
+  );
+}
+
 /** "Oggi" nel fuso indicato, come stringa YYYY-MM-DD. */
 export function todayStr(timeZone: string): string {
   // en-CA => formato YYYY-MM-DD
