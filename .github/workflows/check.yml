@@ -2,15 +2,22 @@ name: Controllo orario
 
 on:
   schedule:
-    # GitHub Actions usa UTC. Giriamo ogni ora, un po' più spesso del
-    # necessario, e lasciamo decidere allo script (src/main.ts, modo
-    # "auto") cosa fare in base all'ora locale Europe/Rome — così il
+    # GitHub Actions usa UTC. Lasciamo decidere allo script (src/main.ts,
+    # modo "auto") cosa fare in base all'ora locale Europe/Rome — così il
     # comportamento resta corretto sia con l'ora solare che legale:
     #   06 locali                  -> controllo del mattino, notifica sempre
     #   07-13, 16, 18, 21 locali   -> controllo che notifica solo variazioni
     #   fuori da queste ore        -> lo script non fa nulla (nessuna chiamata al sito)
     # (le ore esatte sono in MORNING_HOUR / DAYTIME_HOURS più sotto)
-    - cron: "0 4-20 * * 1-5"
+    #
+    # NOTA: i cron "schedule" di GitHub sono "best effort" e vengono
+    # ritardati o SALTATI sotto carico, soprattutto quelli impostati
+    # esattamente allo scoccare dell'ora (xx:00), il minuto più congestionato
+    # della piattaforma. Per questo giriamo 4 volte all'ora, su minuti
+    # decentrati: anche se GitHub ne salta la maggior parte, restano buone
+    # probabilità che almeno un tentativo vada a segno in ogni ora utile
+    # (in particolare quella delle 6, che deve notificare sempre).
+    - cron: "6,21,36,51 4-20 * * 1-5"
   workflow_dispatch:
     inputs:
       test_notification:
