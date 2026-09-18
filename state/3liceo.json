@@ -1,13 +1,13 @@
 {
   "classSlug": "3liceo",
-  "updatedAt": "2026-09-17T12:43:00.977Z",
+  "updatedAt": "2026-09-18T08:58:08.779Z",
   "weeks": {
     "2026-09-14": {
       "weekStart": "2026-09-14",
       "publication": {
-        "id": "1c6c5743-0444-49ae-9dc8-4c2606a2f797",
-        "version": 10,
-        "publishedAt": "2026-09-15T22:02:39.752Z",
+        "id": "b46e030f-dc64-4cb1-b08b-39e62c1c60c6",
+        "version": 11,
+        "publishedAt": "2026-09-18T08:28:46.305Z",
         "weekStart": "2026-09-14"
       },
       "lessons": [
@@ -478,9 +478,9 @@
     "2026-09-21": {
       "weekStart": "2026-09-21",
       "publication": {
-        "id": "0d975576-cff7-4cd4-b132-385468827fbd",
-        "version": 12,
-        "publishedAt": "2026-09-16T07:49:31.382Z",
+        "id": "e535b03b-145b-4eaf-80f8-cfd07ae7f8f8",
+        "version": 15,
+        "publishedAt": "2026-09-18T08:39:42.955Z",
         "weekStart": "2026-09-21"
       },
       "lessons": [
@@ -704,19 +704,19 @@
           "title": "Lezione",
           "activityType": "lesson",
           "teachers": [
-            "Gualtiero Giovanazzi"
+            "Claudia Vecchiato"
           ],
           "teacherKeys": [
-            "giovanazzi"
+            "vecchiato"
           ],
           "room": "3LSA",
           "notes": null,
           "occurrenceIds": [
             "7d4edce5-b42b-453d-bffd-934988bf91ff"
           ],
-          "baselineStatus": "base",
+          "baselineStatus": "modified",
           "isVariation": false,
-          "hasSubstitution": false,
+          "hasSubstitution": true,
           "isFirstOfDay": true
         },
         {
@@ -729,19 +729,19 @@
           "title": "Lezione",
           "activityType": "lesson",
           "teachers": [
-            "Claudia Vecchiato"
+            "Gualtiero Giovanazzi"
           ],
           "teacherKeys": [
-            "vecchiato"
+            "giovanazzi"
           ],
           "room": "3LSA",
           "notes": null,
           "occurrenceIds": [
             "e52ee27c-88c8-4373-bfc9-5bc89efcdb29"
           ],
-          "baselineStatus": "base",
+          "baselineStatus": "modified",
           "isVariation": false,
-          "hasSubstitution": false,
+          "hasSubstitution": true,
           "isFirstOfDay": false
         },
         {
@@ -854,9 +854,9 @@
           "uid": "a68f6b97-65f2-409c-8844-321dd31cb768",
           "date": "2026-09-24",
           "startMinute": 490,
-          "endMinute": 590,
+          "endMinute": 540,
           "start": "08:10",
-          "end": "09:50",
+          "end": "09:00",
           "title": "Lezione",
           "activityType": "lesson",
           "teachers": [
@@ -868,13 +868,37 @@
           "room": "3LSA",
           "notes": null,
           "occurrenceIds": [
-            "a68f6b97-65f2-409c-8844-321dd31cb768",
-            "8649598f-7410-4933-96c6-331d760c5ce2"
+            "a68f6b97-65f2-409c-8844-321dd31cb768"
           ],
           "baselineStatus": "base",
           "isVariation": false,
           "hasSubstitution": false,
           "isFirstOfDay": true
+        },
+        {
+          "uid": "8649598f-7410-4933-96c6-331d760c5ce2",
+          "date": "2026-09-24",
+          "startMinute": 540,
+          "endMinute": 590,
+          "start": "09:00",
+          "end": "09:50",
+          "title": "Giornata della Scuola",
+          "activityType": "lesson",
+          "teachers": [
+            "Francesca Dasti"
+          ],
+          "teacherKeys": [
+            "dasti"
+          ],
+          "room": "3LSA",
+          "notes": "Giornata della Scuola",
+          "occurrenceIds": [
+            "8649598f-7410-4933-96c6-331d760c5ce2"
+          ],
+          "baselineStatus": "modified",
+          "isVariation": false,
+          "hasSubstitution": false,
+          "isFirstOfDay": false
         },
         {
           "uid": "206fd9bd-1cbc-47e4-a176-19f04db7be83",
@@ -883,16 +907,18 @@
           "endMinute": 705,
           "start": "10:05",
           "end": "11:45",
-          "title": "Lezione",
+          "title": "Giornata della Scuola",
           "activityType": "lesson",
           "teachers": [
-            "Kevin Delugan"
+            "Kevin Delugan",
+            "Francesca Dasti"
           ],
           "teacherKeys": [
-            "delugan"
+            "delugan",
+            "dasti"
           ],
           "room": "3LSA",
-          "notes": null,
+          "notes": "Giornata della Scuola",
           "occurrenceIds": [
             "206fd9bd-1cbc-47e4-a176-19f04db7be83",
             "23e92497-e893-45f3-98bf-d413fd36a053"
@@ -1414,7 +1440,7 @@
     }
   },
   "lastNotification": {
-    "date": "2026-09-17",
-    "kind": "none"
+    "date": "2026-09-18",
+    "kind": "changes"
   }
 }
