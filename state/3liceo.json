@@ -1,6 +1,6 @@
 {
   "classSlug": "3liceo",
-  "updatedAt": "2026-09-21T09:52:02.150Z",
+  "updatedAt": "2026-09-21T16:26:15.869Z",
   "weeks": {
     "2026-09-14": {
       "weekStart": "2026-09-14",
@@ -478,9 +478,9 @@
     "2026-09-21": {
       "weekStart": "2026-09-21",
       "publication": {
-        "id": "0e7a760a-3754-4054-b62f-ccf84437e4f7",
-        "version": 23,
-        "publishedAt": "2026-09-21T09:07:06.641Z",
+        "id": "3dfec6b0-34ba-4e39-88cd-2d6647613aab",
+        "version": 27,
+        "publishedAt": "2026-09-21T16:24:25.253Z",
         "weekStart": "2026-09-21"
       },
       "lessons": [
@@ -587,7 +587,7 @@
             "fdfdc2f9-6fa9-423b-8bb4-d3bde0f11749"
           ],
           "baselineStatus": "modified",
-          "isVariation": true,
+          "isVariation": false,
           "hasSubstitution": false,
           "isFirstOfDay": false
         },
@@ -630,17 +630,17 @@
           "title": "Lezione",
           "activityType": "lesson",
           "teachers": [
-            "Francesco Carraro"
+            "Giulia Pontalti"
           ],
           "teacherKeys": [
-            "carraro"
+            "pontalti"
           ],
           "room": "3LSA",
           "notes": null,
           "occurrenceIds": [
             "ec203ac0-419d-44de-8c0a-ae5ff28f47a7"
           ],
-          "baselineStatus": "base",
+          "baselineStatus": "modified",
           "isVariation": false,
           "hasSubstitution": false,
           "isFirstOfDay": true
@@ -852,8 +852,37 @@
           "uid": "9cf3893a-f41e-48c5-970c-d9694f1d8834",
           "date": "2026-09-23",
           "startMinute": 880,
-          "endMinute": 980,
+          "endMinute": 930,
           "start": "14:40",
+          "end": "15:30",
+          "title": "Lezione",
+          "activityType": "lesson",
+          "teachers": [
+            "Giulia Pontalti",
+            "Cecilia Nava",
+            "Francesco Carraro"
+          ],
+          "teacherKeys": [
+            "pontalti",
+            "nava",
+            "carraro"
+          ],
+          "room": "3LSA",
+          "notes": null,
+          "occurrenceIds": [
+            "9cf3893a-f41e-48c5-970c-d9694f1d8834"
+          ],
+          "baselineStatus": "modified",
+          "isVariation": false,
+          "hasSubstitution": false,
+          "isFirstOfDay": false
+        },
+        {
+          "uid": "f6455a3c-ade8-4aa2-9afe-a7b6f74094e3",
+          "date": "2026-09-23",
+          "startMinute": 930,
+          "endMinute": 980,
+          "start": "15:30",
           "end": "16:20",
           "title": "Lezione",
           "activityType": "lesson",
@@ -870,7 +899,6 @@
           "room": "3LSA",
           "notes": null,
           "occurrenceIds": [
-            "9cf3893a-f41e-48c5-970c-d9694f1d8834",
             "f6455a3c-ade8-4aa2-9afe-a7b6f74094e3"
           ],
           "baselineStatus": "modified",
