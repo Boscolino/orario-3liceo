@@ -1,6 +1,6 @@
 {
   "classSlug": "3liceo",
-  "updatedAt": "2026-09-23T14:17:14.217Z",
+  "updatedAt": "2026-09-24T04:01:01.286Z",
   "weeks": {
     "2026-09-14": {
       "weekStart": "2026-09-14",
@@ -478,9 +478,9 @@
     "2026-09-21": {
       "weekStart": "2026-09-21",
       "publication": {
-        "id": "85bc7e84-27b0-411b-8e09-66ae28bf6b9c",
-        "version": 30,
-        "publishedAt": "2026-09-23T12:38:46.324Z",
+        "id": "401e199e-6c05-4b52-991c-5a18e5cb4738",
+        "version": 31,
+        "publishedAt": "2026-09-23T23:17:54.130Z",
         "weekStart": "2026-09-21"
       },
       "lessons": [
@@ -966,11 +966,9 @@
           "title": "Giornata della Scuola",
           "activityType": "lesson",
           "teachers": [
-            "Kevin Delugan",
             "Francesca Dasti"
           ],
           "teacherKeys": [
-            "delugan",
             "dasti"
           ],
           "room": "3LSA",
@@ -980,8 +978,8 @@
             "23e92497-e893-45f3-98bf-d413fd36a053"
           ],
           "baselineStatus": "modified",
-          "isVariation": false,
-          "hasSubstitution": false,
+          "isVariation": true,
+          "hasSubstitution": true,
           "isFirstOfDay": false
         },
         {
@@ -1496,7 +1494,7 @@
     }
   },
   "lastNotification": {
-    "date": "2026-09-23",
-    "kind": "none"
+    "date": "2026-09-24",
+    "kind": "changes"
   }
 }
