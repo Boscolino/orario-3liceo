@@ -1,6 +1,6 @@
 {
   "classSlug": "3liceo",
-  "updatedAt": "2026-09-24T14:15:49.649Z",
+  "updatedAt": "2026-09-25T04:01:02.044Z",
   "weeks": {
     "2026-09-14": {
       "weekStart": "2026-09-14",
@@ -478,9 +478,9 @@
     "2026-09-21": {
       "weekStart": "2026-09-21",
       "publication": {
-        "id": "401e199e-6c05-4b52-991c-5a18e5cb4738",
-        "version": 31,
-        "publishedAt": "2026-09-23T23:17:54.130Z",
+        "id": "103013ca-30f0-423e-b22b-bd51f8b7d09c",
+        "version": 34,
+        "publishedAt": "2026-09-24T23:39:38.831Z",
         "weekStart": "2026-09-21"
       },
       "lessons": [
@@ -506,7 +506,7 @@
             "f70a16d9-a873-42d3-9075-dbd0b5ce32c8"
           ],
           "baselineStatus": "base",
-          "isVariation": false,
+          "isVariation": true,
           "hasSubstitution": false,
           "isFirstOfDay": true
         },
@@ -978,7 +978,7 @@
             "23e92497-e893-45f3-98bf-d413fd36a053"
           ],
           "baselineStatus": "modified",
-          "isVariation": true,
+          "isVariation": false,
           "hasSubstitution": true,
           "isFirstOfDay": false
         },
@@ -1024,13 +1024,13 @@
             "vecchiato"
           ],
           "room": "3LSA",
-          "notes": null,
+          "notes": "Presentazione Artist Club",
           "occurrenceIds": [
             "a85ab236-56fa-48e2-99e5-14742340344e",
             "b3e66120-9e4f-4e9d-a19f-5b2f7c31b848"
           ],
-          "baselineStatus": "base",
-          "isVariation": false,
+          "baselineStatus": "modified",
+          "isVariation": true,
           "hasSubstitution": false,
           "isFirstOfDay": true
         },
@@ -1491,10 +1491,519 @@
           "hasSubstitution": false
         }
       ]
+    },
+    "2026-09-28": {
+      "weekStart": "2026-09-28",
+      "publication": {
+        "id": "ade0c9e9-7395-4e02-b31c-18ba07c0f773",
+        "version": 2,
+        "publishedAt": "2026-09-24T23:23:30.441Z",
+        "weekStart": "2026-09-28"
+      },
+      "lessons": [
+        {
+          "uid": "56192cec-79b8-4e1f-aeca-3e32c2c9e71b",
+          "date": "2026-09-28",
+          "startMinute": 490,
+          "endMinute": 590,
+          "start": "08:10",
+          "end": "09:50",
+          "title": "Lezione",
+          "activityType": "lesson",
+          "teachers": [
+            "Gualtiero Giovanazzi"
+          ],
+          "teacherKeys": [
+            "giovanazzi"
+          ],
+          "room": "3LSA",
+          "notes": null,
+          "occurrenceIds": [
+            "56192cec-79b8-4e1f-aeca-3e32c2c9e71b",
+            "164d5296-1141-455d-a474-9d5b0a50ced3"
+          ],
+          "baselineStatus": "base",
+          "isVariation": false,
+          "hasSubstitution": false,
+          "isFirstOfDay": true
+        },
+        {
+          "uid": "a18b7593-86db-4a2c-a533-6f9b3891c59f",
+          "date": "2026-09-28",
+          "startMinute": 605,
+          "endMinute": 705,
+          "start": "10:05",
+          "end": "11:45",
+          "title": "Lezione",
+          "activityType": "lesson",
+          "teachers": [
+            "Marica Ottavia Rizzo"
+          ],
+          "teacherKeys": [
+            "rizzo"
+          ],
+          "room": "3LSA",
+          "notes": null,
+          "occurrenceIds": [
+            "a18b7593-86db-4a2c-a533-6f9b3891c59f",
+            "2c6fa946-fbd5-4151-84d5-0bfe30f144d9"
+          ],
+          "baselineStatus": "base",
+          "isVariation": false,
+          "hasSubstitution": false,
+          "isFirstOfDay": false
+        },
+        {
+          "uid": "e4a3b48e-b5ab-4f2a-b3e9-8ffa2708dc07",
+          "date": "2026-09-28",
+          "startMinute": 720,
+          "endMinute": 820,
+          "start": "12:00",
+          "end": "13:40",
+          "title": "Lezione",
+          "activityType": "lesson",
+          "teachers": [
+            "Giorgia Modonese"
+          ],
+          "teacherKeys": [
+            "modonese"
+          ],
+          "room": "3LSA",
+          "notes": null,
+          "occurrenceIds": [
+            "e4a3b48e-b5ab-4f2a-b3e9-8ffa2708dc07",
+            "5de230cd-e70a-467e-988d-25e3694dc1a6"
+          ],
+          "baselineStatus": "base",
+          "isVariation": false,
+          "hasSubstitution": false,
+          "isFirstOfDay": false
+        },
+        {
+          "uid": "430e1019-8ea5-4ded-b751-d98c1d87016e",
+          "date": "2026-09-28",
+          "startMinute": 880,
+          "endMinute": 980,
+          "start": "14:40",
+          "end": "16:20",
+          "title": "Lezione",
+          "activityType": "lesson",
+          "teachers": [
+            "Giorgia Modonese",
+            "Kevin Delugan",
+            "Berardino Fulvi"
+          ],
+          "teacherKeys": [
+            "modonese",
+            "delugan",
+            "fulvi"
+          ],
+          "room": "3LSA",
+          "notes": null,
+          "occurrenceIds": [
+            "430e1019-8ea5-4ded-b751-d98c1d87016e",
+            "13be4870-8117-4044-a020-2e22860790fc"
+          ],
+          "baselineStatus": "modified",
+          "isVariation": false,
+          "hasSubstitution": false,
+          "isFirstOfDay": false
+        },
+        {
+          "uid": "9c7cffd5-c120-466e-b4fc-55296c2ecf2c",
+          "date": "2026-09-29",
+          "startMinute": 490,
+          "endMinute": 590,
+          "start": "08:10",
+          "end": "09:50",
+          "title": "Lezione",
+          "activityType": "lesson",
+          "teachers": [
+            "Giulia Pontalti"
+          ],
+          "teacherKeys": [
+            "pontalti"
+          ],
+          "room": "3LSA",
+          "notes": null,
+          "occurrenceIds": [
+            "9c7cffd5-c120-466e-b4fc-55296c2ecf2c",
+            "9b62d66b-4a0f-40af-bbdb-c3eb5bea0914"
+          ],
+          "baselineStatus": "modified",
+          "isVariation": true,
+          "hasSubstitution": true,
+          "isFirstOfDay": true
+        },
+        {
+          "uid": "efe65b76-284c-46f9-8a0d-50d344e494ca",
+          "date": "2026-09-29",
+          "startMinute": 605,
+          "endMinute": 705,
+          "start": "10:05",
+          "end": "11:45",
+          "title": "Lezione",
+          "activityType": "lesson",
+          "teachers": [
+            "Francesca Dasti"
+          ],
+          "teacherKeys": [
+            "dasti"
+          ],
+          "room": "3LSA",
+          "notes": null,
+          "occurrenceIds": [
+            "efe65b76-284c-46f9-8a0d-50d344e494ca",
+            "0647acf1-d531-4d41-9ece-0505322c3502"
+          ],
+          "baselineStatus": "base",
+          "isVariation": false,
+          "hasSubstitution": false,
+          "isFirstOfDay": false
+        },
+        {
+          "uid": "136c96bd-ce86-4272-a21d-023f2577503c",
+          "date": "2026-09-29",
+          "startMinute": 720,
+          "endMinute": 820,
+          "start": "12:00",
+          "end": "13:40",
+          "title": "Lezione",
+          "activityType": "lesson",
+          "teachers": [
+            "Claudia Vecchiato"
+          ],
+          "teacherKeys": [
+            "vecchiato"
+          ],
+          "room": "3LSA",
+          "notes": null,
+          "occurrenceIds": [
+            "136c96bd-ce86-4272-a21d-023f2577503c",
+            "2802de1b-c0d0-4059-848f-92b7c103cd14"
+          ],
+          "baselineStatus": "base",
+          "isVariation": false,
+          "hasSubstitution": false,
+          "isFirstOfDay": false
+        },
+        {
+          "uid": "24eb8e47-f651-408c-813f-10f659b3ab35",
+          "date": "2026-09-30",
+          "startMinute": 490,
+          "endMinute": 540,
+          "start": "08:10",
+          "end": "09:00",
+          "title": "Lezione",
+          "activityType": "lesson",
+          "teachers": [
+            "Gualtiero Giovanazzi"
+          ],
+          "teacherKeys": [
+            "giovanazzi"
+          ],
+          "room": "3LSA",
+          "notes": null,
+          "occurrenceIds": [
+            "24eb8e47-f651-408c-813f-10f659b3ab35"
+          ],
+          "baselineStatus": "base",
+          "isVariation": false,
+          "hasSubstitution": false,
+          "isFirstOfDay": true
+        },
+        {
+          "uid": "79b85c89-a95c-4fcd-acb6-37f57678bb3e",
+          "date": "2026-09-30",
+          "startMinute": 540,
+          "endMinute": 590,
+          "start": "09:00",
+          "end": "09:50",
+          "title": "Lezione",
+          "activityType": "lesson",
+          "teachers": [
+            "Claudia Vecchiato"
+          ],
+          "teacherKeys": [
+            "vecchiato"
+          ],
+          "room": "3LSA",
+          "notes": null,
+          "occurrenceIds": [
+            "79b85c89-a95c-4fcd-acb6-37f57678bb3e"
+          ],
+          "baselineStatus": "base",
+          "isVariation": false,
+          "hasSubstitution": false,
+          "isFirstOfDay": false
+        },
+        {
+          "uid": "bd9a779f-ddd4-40d2-99c9-4c2de630edce",
+          "date": "2026-09-30",
+          "startMinute": 605,
+          "endMinute": 705,
+          "start": "10:05",
+          "end": "11:45",
+          "title": "Lezione",
+          "activityType": "lesson",
+          "teachers": [
+            "Giorgia Modonese"
+          ],
+          "teacherKeys": [
+            "modonese"
+          ],
+          "room": "3LSA",
+          "notes": null,
+          "occurrenceIds": [
+            "bd9a779f-ddd4-40d2-99c9-4c2de630edce",
+            "6f288436-e200-4d0b-be2d-6352155fef92"
+          ],
+          "baselineStatus": "base",
+          "isVariation": false,
+          "hasSubstitution": false,
+          "isFirstOfDay": false
+        },
+        {
+          "uid": "a4cc1dee-7ea9-49ce-9e4c-e4eb03ee7953",
+          "date": "2026-09-30",
+          "startMinute": 720,
+          "endMinute": 770,
+          "start": "12:00",
+          "end": "12:50",
+          "title": "Lezione",
+          "activityType": "lesson",
+          "teachers": [
+            "Marica Ottavia Rizzo"
+          ],
+          "teacherKeys": [
+            "rizzo"
+          ],
+          "room": "3LSA",
+          "notes": null,
+          "occurrenceIds": [
+            "a4cc1dee-7ea9-49ce-9e4c-e4eb03ee7953"
+          ],
+          "baselineStatus": "base",
+          "isVariation": false,
+          "hasSubstitution": false,
+          "isFirstOfDay": false
+        },
+        {
+          "uid": "c6069c2e-9aee-4400-af11-931f80d9eb5c",
+          "date": "2026-09-30",
+          "startMinute": 770,
+          "endMinute": 820,
+          "start": "12:50",
+          "end": "13:40",
+          "title": "Lezione",
+          "activityType": "lesson",
+          "teachers": [
+            "Francesco Carraro"
+          ],
+          "teacherKeys": [
+            "carraro"
+          ],
+          "room": "3LSA",
+          "notes": null,
+          "occurrenceIds": [
+            "c6069c2e-9aee-4400-af11-931f80d9eb5c"
+          ],
+          "baselineStatus": "base",
+          "isVariation": false,
+          "hasSubstitution": false,
+          "isFirstOfDay": false
+        },
+        {
+          "uid": "6404884e-7ed8-43dd-b68a-eddc6e074be3",
+          "date": "2026-09-30",
+          "startMinute": 880,
+          "endMinute": 980,
+          "start": "14:40",
+          "end": "16:20",
+          "title": "Lezione",
+          "activityType": "lesson",
+          "teachers": [
+            "Giulia Pontalti",
+            "Cecilia Nava",
+            "Francesco Carraro"
+          ],
+          "teacherKeys": [
+            "pontalti",
+            "nava",
+            "carraro"
+          ],
+          "room": "3LSA",
+          "notes": null,
+          "occurrenceIds": [
+            "6404884e-7ed8-43dd-b68a-eddc6e074be3",
+            "fc3efc6a-151c-427e-a5ca-8cae5f2b0166"
+          ],
+          "baselineStatus": "modified",
+          "isVariation": false,
+          "hasSubstitution": false,
+          "isFirstOfDay": false
+        },
+        {
+          "uid": "857cf42c-79e0-4fdf-8387-04a5d6ebc9ab",
+          "date": "2026-10-01",
+          "startMinute": 490,
+          "endMinute": 590,
+          "start": "08:10",
+          "end": "09:50",
+          "title": "Lezione",
+          "activityType": "lesson",
+          "teachers": [
+            "Francesca Dasti"
+          ],
+          "teacherKeys": [
+            "dasti"
+          ],
+          "room": "3LSA",
+          "notes": null,
+          "occurrenceIds": [
+            "857cf42c-79e0-4fdf-8387-04a5d6ebc9ab",
+            "f76e09e6-8a82-4eb9-92b7-f448835fa65d"
+          ],
+          "baselineStatus": "base",
+          "isVariation": false,
+          "hasSubstitution": false,
+          "isFirstOfDay": true
+        },
+        {
+          "uid": "4c964216-54a9-4a64-a7f5-485063a82293",
+          "date": "2026-10-01",
+          "startMinute": 605,
+          "endMinute": 705,
+          "start": "10:05",
+          "end": "11:45",
+          "title": "Lezione",
+          "activityType": "lesson",
+          "teachers": [
+            "Kevin Delugan"
+          ],
+          "teacherKeys": [
+            "delugan"
+          ],
+          "room": "3LSA",
+          "notes": null,
+          "occurrenceIds": [
+            "4c964216-54a9-4a64-a7f5-485063a82293",
+            "8c9eb9f0-4a3d-4052-aa60-95679af826d6"
+          ],
+          "baselineStatus": "base",
+          "isVariation": false,
+          "hasSubstitution": false,
+          "isFirstOfDay": false
+        },
+        {
+          "uid": "fdb95353-607a-4f67-bb02-abec15b90957",
+          "date": "2026-10-01",
+          "startMinute": 720,
+          "endMinute": 820,
+          "start": "12:00",
+          "end": "13:40",
+          "title": "Lezione",
+          "activityType": "lesson",
+          "teachers": [
+            "Andrea Telloli"
+          ],
+          "teacherKeys": [
+            "telloli"
+          ],
+          "room": "Palestra",
+          "notes": null,
+          "occurrenceIds": [
+            "fdb95353-607a-4f67-bb02-abec15b90957",
+            "bdaabca0-48cb-482b-95e3-d799b45f0cf0"
+          ],
+          "baselineStatus": "modified",
+          "isVariation": false,
+          "hasSubstitution": false,
+          "isFirstOfDay": false
+        },
+        {
+          "uid": "713d1745-c7f1-41c9-a563-e4cb5b931690",
+          "date": "2026-10-02",
+          "startMinute": 490,
+          "endMinute": 590,
+          "start": "08:10",
+          "end": "09:50",
+          "title": "Lezione",
+          "activityType": "lesson",
+          "teachers": [
+            "Claudia Vecchiato"
+          ],
+          "teacherKeys": [
+            "vecchiato"
+          ],
+          "room": "3LSA",
+          "notes": null,
+          "occurrenceIds": [
+            "713d1745-c7f1-41c9-a563-e4cb5b931690",
+            "c9a40fdd-ec5f-4634-8537-028c259e4fcc"
+          ],
+          "baselineStatus": "base",
+          "isVariation": false,
+          "hasSubstitution": false,
+          "isFirstOfDay": true
+        },
+        {
+          "uid": "3e00508e-b493-474d-afc8-2e09c4f5b76e",
+          "date": "2026-10-02",
+          "startMinute": 605,
+          "endMinute": 705,
+          "start": "10:05",
+          "end": "11:45",
+          "title": "Lezione",
+          "activityType": "lesson",
+          "teachers": [
+            "Paolo Cacciari"
+          ],
+          "teacherKeys": [
+            "cacciari"
+          ],
+          "room": "3LSA",
+          "notes": null,
+          "occurrenceIds": [
+            "3e00508e-b493-474d-afc8-2e09c4f5b76e",
+            "02a3d422-a203-4cac-a720-570b9c54478d"
+          ],
+          "baselineStatus": "base",
+          "isVariation": false,
+          "hasSubstitution": false,
+          "isFirstOfDay": false
+        },
+        {
+          "uid": "68de9043-2c5d-4c3f-874d-e83860b98167",
+          "date": "2026-10-02",
+          "startMinute": 720,
+          "endMinute": 820,
+          "start": "12:00",
+          "end": "13:40",
+          "title": "Lezione",
+          "activityType": "lesson",
+          "teachers": [
+            "Francesco Carraro"
+          ],
+          "teacherKeys": [
+            "carraro"
+          ],
+          "room": "3LSA",
+          "notes": null,
+          "occurrenceIds": [
+            "68de9043-2c5d-4c3f-874d-e83860b98167",
+            "019b7863-2c33-4624-b2b4-c63f1debe106"
+          ],
+          "baselineStatus": "base",
+          "isVariation": false,
+          "hasSubstitution": false,
+          "isFirstOfDay": false
+        }
+      ]
     }
   },
   "lastNotification": {
-    "date": "2026-09-24",
+    "date": "2026-09-25",
     "kind": "changes"
   }
 }
