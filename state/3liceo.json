@@ -1,6 +1,6 @@
 {
   "classSlug": "3liceo",
-  "updatedAt": "2026-09-25T04:01:02.044Z",
+  "updatedAt": "2026-09-25T09:33:44.346Z",
   "weeks": {
     "2026-09-14": {
       "weekStart": "2026-09-14",
@@ -478,9 +478,9 @@
     "2026-09-21": {
       "weekStart": "2026-09-21",
       "publication": {
-        "id": "103013ca-30f0-423e-b22b-bd51f8b7d09c",
-        "version": 34,
-        "publishedAt": "2026-09-24T23:39:38.831Z",
+        "id": "084c66cd-630f-42ac-a1c3-13f18f3c4bb3",
+        "version": 35,
+        "publishedAt": "2026-09-25T07:12:03.192Z",
         "weekStart": "2026-09-21"
       },
       "lessons": [
@@ -506,7 +506,7 @@
             "f70a16d9-a873-42d3-9075-dbd0b5ce32c8"
           ],
           "baselineStatus": "base",
-          "isVariation": true,
+          "isVariation": false,
           "hasSubstitution": false,
           "isFirstOfDay": true
         },
@@ -1030,7 +1030,7 @@
             "b3e66120-9e4f-4e9d-a19f-5b2f7c31b848"
           ],
           "baselineStatus": "modified",
-          "isVariation": true,
+          "isVariation": false,
           "hasSubstitution": false,
           "isFirstOfDay": true
         },
@@ -1495,9 +1495,9 @@
     "2026-09-28": {
       "weekStart": "2026-09-28",
       "publication": {
-        "id": "ade0c9e9-7395-4e02-b31c-18ba07c0f773",
-        "version": 2,
-        "publishedAt": "2026-09-24T23:23:30.441Z",
+        "id": "c6b5d107-f3fb-4962-80fa-ca9ba10b7333",
+        "version": 4,
+        "publishedAt": "2026-09-25T08:11:59.859Z",
         "weekStart": "2026-09-28"
       },
       "lessons": [
@@ -1631,7 +1631,7 @@
             "9b62d66b-4a0f-40af-bbdb-c3eb5bea0914"
           ],
           "baselineStatus": "modified",
-          "isVariation": true,
+          "isVariation": false,
           "hasSubstitution": true,
           "isFirstOfDay": true
         },
