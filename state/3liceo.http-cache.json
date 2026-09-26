@@ -12,10 +12,10 @@
     "fetchedAt": "2026-09-18T19:44:31.211Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-09-21/classi/3liceo?giorno=2026-09-21&scuola=media": {
-    "fetchedAt": "2026-09-25T14:43:42.307Z"
+    "fetchedAt": "2026-09-26T04:00:56.823Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-09-28/classi/3liceo?giorno=2026-09-28&scuola=media": {
-    "fetchedAt": "2026-09-25T14:43:44.378Z"
+    "fetchedAt": "2026-09-26T04:00:59.172Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/a3fbc5df-cebc-4ed4-b740-b3cd142f449b/json?class=3liceo": {
     "fetchedAt": "2026-09-08T09:26:37.320Z"
@@ -27,7 +27,7 @@
     "fetchedAt": "2026-09-11T09:25:25.762Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-10-05/classi/3liceo?giorno=2026-10-05&scuola=media": {
-    "fetchedAt": "2026-09-25T14:43:45.935Z"
+    "fetchedAt": "2026-09-26T04:01:00.840Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/a4ed64e6-eeba-4a3d-bb61-8a96f6f85a0e/json?class=3liceo": {
     "fetchedAt": "2026-09-15T09:51:07.349Z"
@@ -36,7 +36,7 @@
     "fetchedAt": "2026-09-14T11:03:27.157Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-10-12/classi/3liceo?giorno=2026-10-12&scuola=media": {
-    "fetchedAt": "2026-09-25T14:43:46.049Z"
+    "fetchedAt": "2026-09-26T04:01:00.993Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/5570f1a9-b934-41db-9ce2-4d35f2d8e5f1/json?class=3liceo": {
     "fetchedAt": "2026-09-15T09:51:09.732Z"
@@ -84,12 +84,12 @@
     "fetchedAt": "2026-09-25T04:01:01.509Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-10-19/classi/3liceo?giorno=2026-10-19&scuola=media": {
-    "fetchedAt": "2026-09-25T14:43:46.162Z"
+    "fetchedAt": "2026-09-26T04:01:01.143Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/084c66cd-630f-42ac-a1c3-13f18f3c4bb3/json?class=3liceo": {
-    "fetchedAt": "2026-09-25T14:43:43.772Z"
+    "fetchedAt": "2026-09-26T04:00:58.394Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/c6b5d107-f3fb-4962-80fa-ca9ba10b7333/json?class=3liceo": {
-    "fetchedAt": "2026-09-25T14:43:45.816Z"
+    "fetchedAt": "2026-09-26T04:01:00.686Z"
   }
 }
