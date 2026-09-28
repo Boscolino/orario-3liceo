@@ -15,7 +15,7 @@
     "fetchedAt": "2026-09-27T04:00:55.530Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-09-28/classi/3liceo?giorno=2026-09-28&scuola=media": {
-    "fetchedAt": "2026-09-27T04:00:57.760Z"
+    "fetchedAt": "2026-09-28T04:00:56.701Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/a3fbc5df-cebc-4ed4-b740-b3cd142f449b/json?class=3liceo": {
     "fetchedAt": "2026-09-08T09:26:37.320Z"
@@ -27,7 +27,7 @@
     "fetchedAt": "2026-09-11T09:25:25.762Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-10-05/classi/3liceo?giorno=2026-10-05&scuola=media": {
-    "fetchedAt": "2026-09-27T04:00:59.341Z"
+    "fetchedAt": "2026-09-28T04:00:58.671Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/a4ed64e6-eeba-4a3d-bb61-8a96f6f85a0e/json?class=3liceo": {
     "fetchedAt": "2026-09-15T09:51:07.349Z"
@@ -36,7 +36,7 @@
     "fetchedAt": "2026-09-14T11:03:27.157Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-10-12/classi/3liceo?giorno=2026-10-12&scuola=media": {
-    "fetchedAt": "2026-09-27T04:00:59.454Z"
+    "fetchedAt": "2026-09-28T04:00:58.817Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/5570f1a9-b934-41db-9ce2-4d35f2d8e5f1/json?class=3liceo": {
     "fetchedAt": "2026-09-15T09:51:09.732Z"
@@ -84,12 +84,15 @@
     "fetchedAt": "2026-09-25T04:01:01.509Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-10-19/classi/3liceo?giorno=2026-10-19&scuola=media": {
-    "fetchedAt": "2026-09-27T04:00:59.567Z"
+    "fetchedAt": "2026-09-28T04:00:58.963Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/084c66cd-630f-42ac-a1c3-13f18f3c4bb3/json?class=3liceo": {
     "fetchedAt": "2026-09-27T04:00:57.009Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/c6b5d107-f3fb-4962-80fa-ca9ba10b7333/json?class=3liceo": {
     "fetchedAt": "2026-09-27T04:00:59.207Z"
+  },
+  "https://orario.rainerum.delugan.net/api/publications/2b3b1f0c-1a3e-477e-9800-a5c4c683fa7a/json?class=3liceo": {
+    "fetchedAt": "2026-09-28T04:00:58.215Z"
   }
 }
