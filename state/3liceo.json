@@ -1,6 +1,6 @@
 {
   "classSlug": "3liceo",
-  "updatedAt": "2026-09-29T16:39:35.329Z",
+  "updatedAt": "2026-09-30T04:00:55.949Z",
   "weeks": {
     "2026-09-14": {
       "weekStart": "2026-09-14",
@@ -1495,9 +1495,9 @@
     "2026-09-28": {
       "weekStart": "2026-09-28",
       "publication": {
-        "id": "caac1704-788c-4ddb-8cdc-6efe8652f7b8",
-        "version": 8,
-        "publishedAt": "2026-09-29T12:10:18.787Z",
+        "id": "fe0fe150-bb03-496a-9946-85e48550aa1c",
+        "version": 10,
+        "publishedAt": "2026-09-29T19:04:23.573Z",
         "weekStart": "2026-09-28"
       },
       "lessons": [
@@ -1691,9 +1691,9 @@
           "uid": "24eb8e47-f651-408c-813f-10f659b3ab35",
           "date": "2026-09-30",
           "startMinute": 490,
-          "endMinute": 540,
+          "endMinute": 590,
           "start": "08:10",
-          "end": "09:00",
+          "end": "09:50",
           "title": "Lezione",
           "activityType": "lesson",
           "teachers": [
@@ -1705,37 +1705,13 @@
           "room": "3LSA",
           "notes": null,
           "occurrenceIds": [
-            "24eb8e47-f651-408c-813f-10f659b3ab35"
-          ],
-          "baselineStatus": "base",
-          "isVariation": false,
-          "hasSubstitution": false,
-          "isFirstOfDay": true
-        },
-        {
-          "uid": "79b85c89-a95c-4fcd-acb6-37f57678bb3e",
-          "date": "2026-09-30",
-          "startMinute": 540,
-          "endMinute": 590,
-          "start": "09:00",
-          "end": "09:50",
-          "title": "Lezione",
-          "activityType": "lesson",
-          "teachers": [
-            "Claudia Vecchiato"
-          ],
-          "teacherKeys": [
-            "vecchiato"
-          ],
-          "room": "3LSA",
-          "notes": null,
-          "occurrenceIds": [
+            "24eb8e47-f651-408c-813f-10f659b3ab35",
             "79b85c89-a95c-4fcd-acb6-37f57678bb3e"
           ],
-          "baselineStatus": "base",
+          "baselineStatus": "modified",
           "isVariation": false,
-          "hasSubstitution": false,
-          "isFirstOfDay": false
+          "hasSubstitution": true,
+          "isFirstOfDay": true
         },
         {
           "uid": "bd9a779f-ddd4-40d2-99c9-4c2de630edce",
@@ -1773,19 +1749,19 @@
           "title": "Lezione",
           "activityType": "lesson",
           "teachers": [
-            "Marica Ottavia Rizzo"
+            "Francesco Carraro"
           ],
           "teacherKeys": [
-            "rizzo"
+            "carraro"
           ],
           "room": "3LSA",
           "notes": null,
           "occurrenceIds": [
             "a4cc1dee-7ea9-49ce-9e4c-e4eb03ee7953"
           ],
-          "baselineStatus": "base",
+          "baselineStatus": "modified",
           "isVariation": false,
-          "hasSubstitution": false,
+          "hasSubstitution": true,
           "isFirstOfDay": false
         },
         {
@@ -1798,19 +1774,19 @@
           "title": "Lezione",
           "activityType": "lesson",
           "teachers": [
-            "Francesco Carraro"
+            "Claudia Vecchiato"
           ],
           "teacherKeys": [
-            "carraro"
+            "vecchiato"
           ],
           "room": "3LSA",
           "notes": null,
           "occurrenceIds": [
             "c6069c2e-9aee-4400-af11-931f80d9eb5c"
           ],
-          "baselineStatus": "base",
+          "baselineStatus": "modified",
           "isVariation": false,
-          "hasSubstitution": false,
+          "hasSubstitution": true,
           "isFirstOfDay": false
         },
         {
@@ -2003,7 +1979,7 @@
     }
   },
   "lastNotification": {
-    "date": "2026-09-29",
-    "kind": "none"
+    "date": "2026-09-30",
+    "kind": "changes"
   }
 }
