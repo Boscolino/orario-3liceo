@@ -1,6 +1,6 @@
 {
   "classSlug": "3liceo",
-  "updatedAt": "2026-10-02T04:01:13.420Z",
+  "updatedAt": "2026-10-02T10:27:31.893Z",
   "weeks": {
     "2026-09-14": {
       "weekStart": "2026-09-14",
@@ -1980,9 +1980,9 @@
     "2026-10-05": {
       "weekStart": "2026-10-05",
       "publication": {
-        "id": "bc506fd4-162e-4139-8739-2e31940f5ae0",
-        "version": 3,
-        "publishedAt": "2026-10-01T23:53:18.143Z",
+        "id": "8e3e256c-d7e0-4b81-939e-72af49619ff9",
+        "version": 5,
+        "publishedAt": "2026-10-02T09:05:55.868Z",
         "weekStart": "2026-10-05"
       },
       "lessons": [
@@ -2090,7 +2090,7 @@
             "2a83b083-b9a3-4eac-b29d-74ff59197408"
           ],
           "baselineStatus": "modified",
-          "isVariation": true,
+          "isVariation": false,
           "hasSubstitution": false,
           "isFirstOfDay": false
         },
@@ -2407,28 +2407,28 @@
           "isFirstOfDay": false
         },
         {
-          "uid": "b1927fd0-7022-4bc2-b404-06d4ec4c5988",
+          "uid": "76c707f5-3d53-476c-8a64-4d9b1f9ae5e4",
           "date": "2026-10-09",
           "startMinute": 490,
           "endMinute": 590,
           "start": "08:10",
           "end": "09:50",
           "title": "Lezione",
-          "activityType": "lesson",
+          "activityType": "other",
           "teachers": [
-            "Claudia Vecchiato"
+            "Gualtiero Giovanazzi"
           ],
           "teacherKeys": [
-            "vecchiato"
+            "giovanazzi"
           ],
-          "room": "3LSA",
+          "room": "4LSA",
           "notes": "VERIFICA SCRITTA",
           "occurrenceIds": [
-            "b1927fd0-7022-4bc2-b404-06d4ec4c5988",
-            "8aab25f5-46f2-4d44-a978-66a0c4b5ef64"
+            "76c707f5-3d53-476c-8a64-4d9b1f9ae5e4",
+            "c401b88b-c66b-4b06-b6c5-b4601b407908"
           ],
-          "baselineStatus": "modified",
-          "isVariation": false,
+          "baselineStatus": "base",
+          "isVariation": true,
           "hasSubstitution": false,
           "isFirstOfDay": true
         },
