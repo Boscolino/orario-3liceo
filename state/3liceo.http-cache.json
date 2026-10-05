@@ -27,7 +27,7 @@
     "fetchedAt": "2026-09-11T09:25:25.762Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-10-05/classi/3liceo?giorno=2026-10-05&scuola=media": {
-    "fetchedAt": "2026-10-05T11:23:06.446Z"
+    "fetchedAt": "2026-10-05T19:49:11.997Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/a4ed64e6-eeba-4a3d-bb61-8a96f6f85a0e/json?class=3liceo": {
     "fetchedAt": "2026-09-15T09:51:07.349Z"
@@ -36,7 +36,7 @@
     "fetchedAt": "2026-09-14T11:03:27.157Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-10-12/classi/3liceo?giorno=2026-10-12&scuola=media": {
-    "fetchedAt": "2026-10-05T11:23:08.630Z"
+    "fetchedAt": "2026-10-05T19:49:14.558Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/5570f1a9-b934-41db-9ce2-4d35f2d8e5f1/json?class=3liceo": {
     "fetchedAt": "2026-09-15T09:51:09.732Z"
@@ -84,7 +84,7 @@
     "fetchedAt": "2026-09-25T04:01:01.509Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-10-19/classi/3liceo?giorno=2026-10-19&scuola=media": {
-    "fetchedAt": "2026-10-05T11:23:10.533Z"
+    "fetchedAt": "2026-10-05T19:49:16.649Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/084c66cd-630f-42ac-a1c3-13f18f3c4bb3/json?class=3liceo": {
     "fetchedAt": "2026-09-27T04:00:57.009Z"
@@ -120,39 +120,45 @@
     "fetchedAt": "2026-10-05T11:23:10.093Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/a5da8356-5465-43ba-939d-4d4142eeeb30/json?class=3liceo": {
-    "fetchedAt": "2026-10-05T11:23:11.949Z"
+    "fetchedAt": "2026-10-05T19:49:18.170Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-10-26/classi/3liceo?giorno=2026-10-26&scuola=media": {
-    "fetchedAt": "2026-10-05T11:23:12.345Z"
+    "fetchedAt": "2026-10-05T19:49:18.693Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/c7ce1f53-d9b5-438e-a650-3959c0729386/json?class=3liceo": {
-    "fetchedAt": "2026-10-05T11:23:13.747Z"
+    "fetchedAt": "2026-10-05T19:49:20.204Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-11-09/classi/3liceo?giorno=2026-11-09&scuola=media": {
-    "fetchedAt": "2026-10-05T11:23:14.156Z"
+    "fetchedAt": "2026-10-05T19:49:20.773Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/60755256-dc95-45b0-9f98-8f35e0f779c5/json?class=3liceo": {
-    "fetchedAt": "2026-10-05T11:23:15.568Z"
+    "fetchedAt": "2026-10-05T19:49:22.292Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-11-16/classi/3liceo?giorno=2026-11-16&scuola=media": {
-    "fetchedAt": "2026-10-05T11:23:15.992Z"
+    "fetchedAt": "2026-10-05T19:49:22.845Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/174bfcc9-970f-4c51-b1ae-98a09e580ae6/json?class=3liceo": {
-    "fetchedAt": "2026-10-05T11:23:17.407Z"
+    "fetchedAt": "2026-10-05T19:49:24.370Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-11-23/classi/3liceo?giorno=2026-11-23&scuola=media": {
-    "fetchedAt": "2026-10-05T11:23:17.526Z"
+    "fetchedAt": "2026-10-05T19:49:24.561Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-11-30/classi/3liceo?giorno=2026-11-30&scuola=media": {
-    "fetchedAt": "2026-10-05T11:23:17.647Z"
+    "fetchedAt": "2026-10-05T19:49:24.728Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-12-07/classi/3liceo?giorno=2026-12-07&scuola=media": {
-    "fetchedAt": "2026-10-05T11:23:17.761Z"
+    "fetchedAt": "2026-10-05T19:49:24.895Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/8e3e256c-d7e0-4b81-939e-72af49619ff9/json?class=3liceo": {
     "fetchedAt": "2026-10-05T04:01:00.205Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/02581e1d-4131-4c0b-8028-17d8ba7907f8/json?class=3liceo": {
     "fetchedAt": "2026-10-05T11:23:07.947Z"
+  },
+  "https://orario.rainerum.delugan.net/api/publications/c19233c9-5769-4563-9975-f0e37939fac1/json?class=3liceo": {
+    "fetchedAt": "2026-10-05T19:49:13.593Z"
+  },
+  "https://orario.rainerum.delugan.net/api/publications/752cc1f0-57c0-4c10-8410-cb9270899f63/json?class=3liceo": {
+    "fetchedAt": "2026-10-05T19:49:16.116Z"
   }
 }
