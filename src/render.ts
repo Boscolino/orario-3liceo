@@ -15,6 +15,7 @@ const ACTIVITY_LABEL: Record<string, string> = {
   laboratory: "Laboratorio",
   seminar: "Seminario",
   mixed: "Attività/cambi vari",
+  other: "Attività",
 };
 
 export function activityLabel(type: string): string {

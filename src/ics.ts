@@ -7,7 +7,7 @@ import { join, dirname } from "node:path";
 import { config } from "./config.ts";
 import type { Lesson, StoredState } from "./types.ts";
 import { activityLabel } from "./render.ts";
-import { lessonTitle, shownTeachers } from "./subjects.ts";
+import { lessonTitle, shownTeachers, subjectFor } from "./subjects.ts";
 import { verificaOverride } from "./verifiche.ts";
 import { holidayMarkerVEvents } from "./holidays.ts";
 
@@ -78,6 +78,11 @@ function dtUtc(iso: string): string {
 function summary(l: Lesson): string {
   const verifica = verificaOverride(l);
   if (verifica) return verifica;
+  // la scuola segna le verifiche nelle note (es. "VERIFICA SCRITTA")
+  if (l.notes && /verific/i.test(l.notes)) {
+    const subject = subjectFor(l);
+    return subject ? `Verifica di ${subject}` : `Verifica · ${shownTeachers(l).join(" / ")}`;
+  }
   if (l.activityType !== "lesson") {
     const who = l.teachers.join(" / ");
     return who ? `${activityLabel(l.activityType)} · ${who}` : activityLabel(l.activityType);
