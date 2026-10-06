@@ -1248,9 +1248,9 @@ LAST-MODIFIED:20261005T120631Z
 SEQUENCE:8
 DTSTART;TZID=Europe/Rome:20261009T081000
 DTEND;TZID=Europe/Rome:20261009T095000
-SUMMARY:other · Gualtiero Giovanazzi
-DESCRIPTION:Docente: Gualtiero Giovanazzi\nAula: 4LSA\nTipo: other\nNota: V
- ERIFICA SCRITTA
+SUMMARY:Verifica di Fisica
+DESCRIPTION:Docente: Gualtiero Giovanazzi\nAula: 4LSA\nTipo: Attività\nNot
+ a: VERIFICA SCRITTA
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 LOCATION:Scuola Salesiani Rainerum\, Piazza Domenicani 15\, 39100 Bolzano
@@ -1511,7 +1511,7 @@ LAST-MODIFIED:20261005T121013Z
 SEQUENCE:3
 DTSTART;TZID=Europe/Rome:20261016T081000
 DTEND;TZID=Europe/Rome:20261016T095000
-SUMMARY:Lezione di Inglese
+SUMMARY:Verifica di Inglese
 DESCRIPTION:Docente: Claudia Vecchiato\nAula: 3LSA\nNota: VERIFICA SCRITTA\
  n⚠️ orario modificato per questa settimana
 STATUS:CONFIRMED
@@ -1774,7 +1774,7 @@ LAST-MODIFIED:20261001T235532Z
 SEQUENCE:1
 DTSTART;TZID=Europe/Rome:20261023T081000
 DTEND;TZID=Europe/Rome:20261023T095000
-SUMMARY:Lezione di Inglese
+SUMMARY:Verifica di Inglese
 DESCRIPTION:Docente: Claudia Vecchiato\nAula: 3LSA\nNota: VERIFICA SCRITTA\
  n⚠️ orario modificato per questa settimana
 STATUS:CONFIRMED
@@ -2037,7 +2037,7 @@ LAST-MODIFIED:20261001T235541Z
 SEQUENCE:1
 DTSTART;TZID=Europe/Rome:20261030T081000
 DTEND;TZID=Europe/Rome:20261030T095000
-SUMMARY:Lezione di Inglese
+SUMMARY:Verifica di Inglese
 DESCRIPTION:Docente: Claudia Vecchiato\nAula: 3LSA\nNota: VERIFICA SCRITTA\
  n⚠️ orario modificato per questa settimana
 STATUS:CONFIRMED
@@ -2300,7 +2300,7 @@ LAST-MODIFIED:20261001T235557Z
 SEQUENCE:1
 DTSTART;TZID=Europe/Rome:20261113T081000
 DTEND;TZID=Europe/Rome:20261113T095000
-SUMMARY:Lezione di Inglese
+SUMMARY:Verifica di Inglese
 DESCRIPTION:Docente: Claudia Vecchiato\nAula: 3LSA\nNota: VERIFICA SCRITTA\
  n⚠️ orario modificato per questa settimana
 STATUS:CONFIRMED
@@ -2563,7 +2563,7 @@ LAST-MODIFIED:20261001T235604Z
 SEQUENCE:1
 DTSTART;TZID=Europe/Rome:20261120T081000
 DTEND;TZID=Europe/Rome:20261120T095000
-SUMMARY:Lezione di Inglese
+SUMMARY:Verifica di Inglese
 DESCRIPTION:Docente: Claudia Vecchiato\nAula: 3LSA\nNota: VERIFICA SCRITTA\
  n⚠️ orario modificato per questa settimana
 STATUS:CONFIRMED
