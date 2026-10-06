@@ -19,7 +19,7 @@
     "_nota": "Blocco del pomeriggio (dalle 'dalle' in poi), che è a scelta con più docenti. 'titolo' = titolo fisso dell'evento; 'docente' = cognome del docente che segue Leonardo (materia dalla mappa sopra, mostrato solo lui).",
     "dalle": "14:00",
     "lunedi": { "titolo": "FLL" },
-    "mercoledi": { "docente": "carraro" }
+    "mercoledi": { "titolo": "Carraro", "docente": "carraro" }
   },
 
   "biweekly": {
