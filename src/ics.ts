@@ -7,7 +7,7 @@ import { join, dirname } from "node:path";
 import { config } from "./config.ts";
 import type { Lesson, StoredState } from "./types.ts";
 import { activityLabel } from "./render.ts";
-import { lessonTitle } from "./subjects.ts";
+import { lessonTitle, shownTeachers } from "./subjects.ts";
 import { verificaOverride } from "./verifiche.ts";
 import { holidayMarkerVEvents } from "./holidays.ts";
 
@@ -87,7 +87,8 @@ function summary(l: Lesson): string {
 
 function description(l: Lesson): string {
   const rows: string[] = [];
-  if (l.teachers.length) rows.push(`Docente: ${l.teachers.join(", ")}`);
+  const teachers = shownTeachers(l);
+  if (teachers.length) rows.push(`Docente: ${teachers.join(", ")}`);
   if (l.room) rows.push(`Aula: ${l.room}`);
   if (l.activityType !== "lesson") rows.push(`Tipo: ${activityLabel(l.activityType)}`);
   if (l.notes) rows.push(`Nota: ${l.notes}`);

@@ -6,7 +6,7 @@ import { hasChanges } from "./diff.ts";
 import { humanDate } from "./dates.ts";
 import { config } from "./config.ts";
 import { activityLabel } from "./render.ts";
-import { subjectFor } from "./subjects.ts";
+import { subjectFor, shownTeachers } from "./subjects.ts";
 import { verificaOverride } from "./verifiche.ts";
 
 // Inizio ora di lezione (minuti da mezzanotte) -> numero dell'ora.
@@ -22,7 +22,7 @@ function oraLabel(l: Lesson): string {
 
 function who(l: Lesson): string {
   const subject = verificaOverride(l) ?? subjectFor(l);
-  const teachers = l.teachers.join(", ");
+  const teachers = shownTeachers(l).join(", ");
   if (subject) return teachers ? `${subject} (${teachers})` : subject;
   return teachers || "docente n.d.";
 }
