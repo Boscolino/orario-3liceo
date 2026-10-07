@@ -1,6 +1,6 @@
 {
   "classSlug": "3liceo",
-  "updatedAt": "2026-10-06T13:31:30.106Z",
+  "updatedAt": "2026-10-07T04:01:07.011Z",
   "weeks": {
     "2026-09-14": {
       "weekStart": "2026-09-14",
@@ -1980,9 +1980,9 @@
     "2026-10-05": {
       "weekStart": "2026-10-05",
       "publication": {
-        "id": "c19233c9-5769-4563-9975-f0e37939fac1",
-        "version": 8,
-        "publishedAt": "2026-10-05T12:06:31.941Z",
+        "id": "4376add6-490c-441f-9609-7003e5dad4ba",
+        "version": 10,
+        "publishedAt": "2026-10-07T00:26:39.298Z",
         "weekStart": "2026-10-05"
       },
       "lessons": [
@@ -2156,10 +2156,10 @@
           "title": "Lezione",
           "activityType": "lesson",
           "teachers": [
-            "Claudia Vecchiato"
+            "Giorgia Modonese"
           ],
           "teacherKeys": [
-            "vecchiato"
+            "modonese"
           ],
           "room": "3LSA",
           "notes": null,
@@ -2167,42 +2167,17 @@
             "809e18a7-c751-4a69-9925-cdcc1082a340",
             "8c9eecd1-bbf9-431f-8ff1-f000d166ecad"
           ],
-          "baselineStatus": "base",
+          "baselineStatus": "modified",
           "isVariation": false,
-          "hasSubstitution": false,
+          "hasSubstitution": true,
           "isFirstOfDay": false
         },
         {
           "uid": "ad203be5-e5b0-4871-8ca4-392d2808b886",
           "date": "2026-10-07",
           "startMinute": 490,
-          "endMinute": 540,
-          "start": "08:10",
-          "end": "09:00",
-          "title": "Lezione",
-          "activityType": "lesson",
-          "teachers": [
-            "Claudia Vecchiato"
-          ],
-          "teacherKeys": [
-            "vecchiato"
-          ],
-          "room": "3LSA",
-          "notes": null,
-          "occurrenceIds": [
-            "ad203be5-e5b0-4871-8ca4-392d2808b886"
-          ],
-          "baselineStatus": "modified",
-          "isVariation": false,
-          "hasSubstitution": true,
-          "isFirstOfDay": true
-        },
-        {
-          "uid": "1318771c-6773-4d9f-9288-cf7ed6f2c1fa",
-          "date": "2026-10-07",
-          "startMinute": 540,
           "endMinute": 590,
-          "start": "09:00",
+          "start": "08:10",
           "end": "09:50",
           "title": "Lezione",
           "activityType": "lesson",
@@ -2215,12 +2190,13 @@
           "room": "3LSA",
           "notes": null,
           "occurrenceIds": [
+            "ad203be5-e5b0-4871-8ca4-392d2808b886",
             "1318771c-6773-4d9f-9288-cf7ed6f2c1fa"
           ],
           "baselineStatus": "modified",
-          "isVariation": false,
+          "isVariation": true,
           "hasSubstitution": true,
-          "isFirstOfDay": false
+          "isFirstOfDay": true
         },
         {
           "uid": "9bde5165-2e4f-48b9-9368-98b96d248d55",
@@ -5153,7 +5129,7 @@
     }
   },
   "lastNotification": {
-    "date": "2026-10-06",
-    "kind": "none"
+    "date": "2026-10-07",
+    "kind": "changes"
   }
 }
