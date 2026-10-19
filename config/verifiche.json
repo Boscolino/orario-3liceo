@@ -1,6 +1,17 @@
 {
-  "_nota": "Verifiche del venerdì. Chiave = venerdì (YYYY-MM-DD), valore = testo da mostrare al posto della lezione normale nel PRIMO blocco di quel venerdì (es. 'Verifica di Matematica'). Le altre ore del venerdì e gli altri giorni non sono toccati. Vuoto finché non arriva il calendario delle verifiche.",
+  "_nota": "Verifiche del venerdì (calendario ufficiale, colonna 3° SA, primo periodo didattico). Chiave = venerdì (YYYY-MM-DD), valore = testo da mostrare al posto della lezione normale nel PRIMO blocco di quel venerdì.",
   "venerdi": {
-    "2026-10-09": "Verifica di Italiano"
+    "2026-10-02": "Verifica di Fisica",
+    "2026-10-09": "Verifica di Italiano",
+    "2026-10-16": "Verifica di Tedesco",
+    "2026-10-23": "Verifica di Matematica",
+    "2026-10-30": "Verifica di Scienze",
+    "2026-11-13": "Verifica di Inglese",
+    "2026-11-20": "Verifica di Italiano",
+    "2026-11-27": "Verifica di Matematica",
+    "2026-12-04": "Verifica di Tedesco",
+    "2026-12-11": "Verifica di Fisica",
+    "2026-12-18": "Verifica di Scienze",
+    "2027-01-08": "Verifica di Inglese"
   }
 }
