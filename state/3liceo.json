@@ -1,6 +1,6 @@
 {
   "classSlug": "3liceo",
-  "updatedAt": "2026-10-19T04:01:08.591Z",
+  "updatedAt": "2026-10-19T09:49:08.273Z",
   "weeks": {
     "2026-09-14": {
       "weekStart": "2026-09-14",
@@ -2998,9 +2998,9 @@
     "2026-10-19": {
       "weekStart": "2026-10-19",
       "publication": {
-        "id": "79264a27-0283-4eb7-aaec-8633befdea02",
-        "version": 8,
-        "publishedAt": "2026-10-18T18:38:40.668Z",
+        "id": "d1efd7a5-b226-4ca1-97ad-caf3249a011c",
+        "version": 9,
+        "publishedAt": "2026-10-19T08:55:45.627Z",
         "weekStart": "2026-10-19"
       },
       "lessons": [
@@ -3531,9 +3531,9 @@
     "2026-10-26": {
       "weekStart": "2026-10-26",
       "publication": {
-        "id": "c1b207bb-1909-4466-981a-22018035a295",
-        "version": 2,
-        "publishedAt": "2026-10-18T18:38:33.380Z",
+        "id": "bc617dfd-9012-4cca-9a57-c8d2edbc6aa4",
+        "version": 3,
+        "publishedAt": "2026-10-19T08:55:52.715Z",
         "weekStart": "2026-10-26"
       },
       "lessons": [
@@ -4064,9 +4064,9 @@
     "2026-11-09": {
       "weekStart": "2026-11-09",
       "publication": {
-        "id": "2d315b07-93eb-4048-a83d-561121cf05d2",
-        "version": 2,
-        "publishedAt": "2026-10-18T18:38:21.386Z",
+        "id": "7c4f406d-4bc3-45dd-a27f-7a47e20c1579",
+        "version": 3,
+        "publishedAt": "2026-10-19T08:55:59.923Z",
         "weekStart": "2026-11-09"
       },
       "lessons": [
@@ -4597,9 +4597,9 @@
     "2026-11-16": {
       "weekStart": "2026-11-16",
       "publication": {
-        "id": "fc24ae0d-021d-4b45-9b74-f2045d46e6d3",
-        "version": 2,
-        "publishedAt": "2026-10-18T18:38:15.800Z",
+        "id": "7e50b5de-5d61-46ba-87f1-188737d66633",
+        "version": 3,
+        "publishedAt": "2026-10-19T08:56:08.036Z",
         "weekStart": "2026-11-16"
       },
       "lessons": [
