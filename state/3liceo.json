@@ -1,6 +1,6 @@
 {
   "classSlug": "3liceo",
-  "updatedAt": "2026-10-24T04:01:05.534Z",
+  "updatedAt": "2026-10-25T05:01:06.200Z",
   "weeks": {
     "2026-09-14": {
       "weekStart": "2026-09-14",
@@ -3531,9 +3531,9 @@
     "2026-10-26": {
       "weekStart": "2026-10-26",
       "publication": {
-        "id": "bc617dfd-9012-4cca-9a57-c8d2edbc6aa4",
-        "version": 3,
-        "publishedAt": "2026-10-19T08:55:52.715Z",
+        "id": "b35209ed-edb6-4bc2-861e-70b0f1f89394",
+        "version": 7,
+        "publishedAt": "2026-10-24T16:43:36.891Z",
         "weekStart": "2026-10-26"
       },
       "lessons": [
@@ -3913,10 +3913,10 @@
           "title": "Lezione",
           "activityType": "lesson",
           "teachers": [
-            "Francesca Dasti"
+            "Francesco Carraro"
           ],
           "teacherKeys": [
-            "dasti"
+            "carraro"
           ],
           "room": "3LSA",
           "notes": null,
@@ -3924,9 +3924,9 @@
             "87ccde52-7304-49c1-8e5e-dfd913e41a3b",
             "b1e29c52-4417-47f3-b27b-47e4ea296baa"
           ],
-          "baselineStatus": "base",
+          "baselineStatus": "modified",
           "isVariation": false,
-          "hasSubstitution": false,
+          "hasSubstitution": true,
           "isFirstOfDay": true
         },
         {
@@ -5129,7 +5129,7 @@
     }
   },
   "lastNotification": {
-    "date": "2026-10-24",
-    "kind": "none"
+    "date": "2026-10-25",
+    "kind": "changes"
   }
 }
