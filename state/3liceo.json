@@ -1,6 +1,6 @@
 {
   "classSlug": "3liceo",
-  "updatedAt": "2026-11-09T12:45:17.027Z",
+  "updatedAt": "2026-11-10T05:01:07.783Z",
   "weeks": {
     "2026-09-14": {
       "weekStart": "2026-09-14",
@@ -4064,9 +4064,9 @@
     "2026-11-09": {
       "weekStart": "2026-11-09",
       "publication": {
-        "id": "38b5ff35-7c56-4d3e-ae87-9415439c3205",
-        "version": 6,
-        "publishedAt": "2026-11-08T18:00:38.744Z",
+        "id": "264c686f-45bd-4919-bac4-8d2070a351af",
+        "version": 7,
+        "publishedAt": "2026-11-09T21:39:27.882Z",
         "weekStart": "2026-11-09"
       },
       "lessons": [
@@ -4118,7 +4118,7 @@
             "831b27a5-7ec8-4c0d-8211-9c3f7bbe91d3"
           ],
           "baselineStatus": "modified",
-          "isVariation": true,
+          "isVariation": false,
           "hasSubstitution": true,
           "isFirstOfDay": false
         },
@@ -4366,19 +4366,19 @@
           "title": "Lezione",
           "activityType": "lesson",
           "teachers": [
-            "Marica Ottavia Rizzo"
+            "Giulia Pontalti"
           ],
           "teacherKeys": [
-            "rizzo"
+            "pontalti"
           ],
           "room": "3LSA",
           "notes": null,
           "occurrenceIds": [
             "c073cf36-4f7a-4ee9-9c53-df23a721fc8d"
           ],
-          "baselineStatus": "base",
-          "isVariation": false,
-          "hasSubstitution": false,
+          "baselineStatus": "modified",
+          "isVariation": true,
+          "hasSubstitution": true,
           "isFirstOfDay": false
         },
         {
@@ -5129,7 +5129,7 @@
     }
   },
   "lastNotification": {
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "kind": "changes"
   }
 }
