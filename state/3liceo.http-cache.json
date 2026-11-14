@@ -129,25 +129,25 @@
     "fetchedAt": "2026-10-18T04:01:03.708Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-11-09/classi/3liceo?giorno=2026-11-09&scuola=media": {
-    "fetchedAt": "2026-11-13T12:05:45.622Z"
+    "fetchedAt": "2026-11-14T05:00:56.683Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/60755256-dc95-45b0-9f98-8f35e0f779c5/json?class=3liceo": {
     "fetchedAt": "2026-10-18T04:01:05.804Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-11-16/classi/3liceo?giorno=2026-11-16&scuola=media": {
-    "fetchedAt": "2026-11-13T12:05:48.083Z"
+    "fetchedAt": "2026-11-14T05:00:58.890Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/174bfcc9-970f-4c51-b1ae-98a09e580ae6/json?class=3liceo": {
     "fetchedAt": "2026-10-18T04:01:07.902Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-11-23/classi/3liceo?giorno=2026-11-23&scuola=media": {
-    "fetchedAt": "2026-11-13T12:05:49.791Z"
+    "fetchedAt": "2026-11-14T05:01:00.460Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-11-30/classi/3liceo?giorno=2026-11-30&scuola=media": {
-    "fetchedAt": "2026-11-13T12:05:49.956Z"
+    "fetchedAt": "2026-11-14T05:01:00.588Z"
   },
   "https://orario.rainerum.delugan.net/orario/2026-12-07/classi/3liceo?giorno=2026-12-07&scuola=media": {
-    "fetchedAt": "2026-11-13T12:05:50.126Z"
+    "fetchedAt": "2026-11-14T05:01:00.698Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/8e3e256c-d7e0-4b81-939e-72af49619ff9/json?class=3liceo": {
     "fetchedAt": "2026-10-05T04:01:00.205Z"
@@ -249,9 +249,12 @@
     "fetchedAt": "2026-11-12T12:34:09.360Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/ca84a6a5-1b9c-4833-bf72-e161754b3eca/json?class=3liceo": {
-    "fetchedAt": "2026-11-13T12:05:47.195Z"
+    "fetchedAt": "2026-11-14T05:00:58.171Z"
   },
   "https://orario.rainerum.delugan.net/api/publications/693b5fd7-9a7b-4f1b-b30f-b8d8b7bf2d5c/json?class=3liceo": {
     "fetchedAt": "2026-11-13T12:05:49.627Z"
+  },
+  "https://orario.rainerum.delugan.net/api/publications/9ac590fc-ae0a-4b52-8b38-5d7e7a1644a0/json?class=3liceo": {
+    "fetchedAt": "2026-11-14T05:01:00.338Z"
   }
 }

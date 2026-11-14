@@ -1,6 +1,6 @@
 {
   "classSlug": "3liceo",
-  "updatedAt": "2026-11-13T12:05:50.135Z",
+  "updatedAt": "2026-11-14T05:01:00.796Z",
   "weeks": {
     "2026-09-14": {
       "weekStart": "2026-09-14",
@@ -4597,9 +4597,9 @@
     "2026-11-16": {
       "weekStart": "2026-11-16",
       "publication": {
-        "id": "693b5fd7-9a7b-4f1b-b30f-b8d8b7bf2d5c",
-        "version": 4,
-        "publishedAt": "2026-11-12T20:02:48.735Z",
+        "id": "9ac590fc-ae0a-4b52-8b38-5d7e7a1644a0",
+        "version": 5,
+        "publishedAt": "2026-11-13T14:03:02.694Z",
         "weekStart": "2026-11-16"
       },
       "lessons": [
@@ -4733,7 +4733,7 @@
             "7840e3cb-9a5d-47f7-9085-078e2b99f6a8"
           ],
           "baselineStatus": "modified",
-          "isVariation": true,
+          "isVariation": false,
           "hasSubstitution": false,
           "isFirstOfDay": true
         },
@@ -4759,7 +4759,7 @@
             "ee89ca3e-5eeb-4ba3-ae7a-620c42634f0f"
           ],
           "baselineStatus": "modified",
-          "isVariation": true,
+          "isVariation": false,
           "hasSubstitution": false,
           "isFirstOfDay": false
         },
@@ -4811,7 +4811,7 @@
             "430d175f-17a1-4f83-8f26-5e4bf761f9da"
           ],
           "baselineStatus": "modified",
-          "isVariation": true,
+          "isVariation": false,
           "hasSubstitution": true,
           "isFirstOfDay": true
         },
@@ -4916,7 +4916,7 @@
             "91b791a8-e91c-484c-8aef-f23c794a0201"
           ],
           "baselineStatus": "modified",
-          "isVariation": true,
+          "isVariation": false,
           "hasSubstitution": true,
           "isFirstOfDay": false
         },
@@ -4945,7 +4945,7 @@
             "8bee77c8-576e-4549-8ab8-c559e2f73e5f"
           ],
           "baselineStatus": "modified",
-          "isVariation": true,
+          "isVariation": false,
           "hasSubstitution": true,
           "isFirstOfDay": false
         },
@@ -5109,7 +5109,7 @@
     }
   },
   "lastNotification": {
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "kind": "none"
   }
 }
