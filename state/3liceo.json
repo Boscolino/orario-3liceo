@@ -1,6 +1,6 @@
 {
   "classSlug": "3liceo",
-  "updatedAt": "2026-11-17T05:01:06.145Z",
+  "updatedAt": "2026-11-18T05:01:03.557Z",
   "weeks": {
     "2026-09-14": {
       "weekStart": "2026-09-14",
@@ -4597,9 +4597,9 @@
     "2026-11-16": {
       "weekStart": "2026-11-16",
       "publication": {
-        "id": "61b807ea-21b7-42a3-8b11-91244fc38030",
-        "version": 8,
-        "publishedAt": "2026-11-16T17:59:36.716Z",
+        "id": "3a2d669b-71f6-4ccc-9290-568525b33407",
+        "version": 11,
+        "publishedAt": "2026-11-17T22:10:38.385Z",
         "weekStart": "2026-11-16"
       },
       "lessons": [
@@ -4845,50 +4845,26 @@
           "uid": "435e6b57-7334-4123-bc9e-2035b18995a4",
           "date": "2026-11-18",
           "startMinute": 720,
-          "endMinute": 770,
-          "start": "12:00",
-          "end": "12:50",
-          "title": "Lezione",
-          "activityType": "lesson",
-          "teachers": [
-            "Marica Ottavia Rizzo"
-          ],
-          "teacherKeys": [
-            "rizzo"
-          ],
-          "room": "3LSA",
-          "notes": null,
-          "occurrenceIds": [
-            "435e6b57-7334-4123-bc9e-2035b18995a4"
-          ],
-          "baselineStatus": "base",
-          "isVariation": false,
-          "hasSubstitution": false,
-          "isFirstOfDay": false
-        },
-        {
-          "uid": "2179d2fa-e7d3-4cd9-ac76-5d1f35d3740e",
-          "date": "2026-11-18",
-          "startMinute": 770,
           "endMinute": 820,
-          "start": "12:50",
+          "start": "12:00",
           "end": "13:40",
           "title": "Lezione",
           "activityType": "lesson",
           "teachers": [
-            "Francesco Carraro"
+            "Claudia Vecchiato"
           ],
           "teacherKeys": [
-            "carraro"
+            "vecchiato"
           ],
           "room": "3LSA",
           "notes": null,
           "occurrenceIds": [
+            "435e6b57-7334-4123-bc9e-2035b18995a4",
             "2179d2fa-e7d3-4cd9-ac76-5d1f35d3740e"
           ],
-          "baselineStatus": "base",
+          "baselineStatus": "modified",
           "isVariation": false,
-          "hasSubstitution": false,
+          "hasSubstitution": true,
           "isFirstOfDay": false
         },
         {
@@ -5109,7 +5085,7 @@
     }
   },
   "lastNotification": {
-    "date": "2026-11-17",
-    "kind": "none"
+    "date": "2026-11-18",
+    "kind": "changes"
   }
 }
