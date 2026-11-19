@@ -1,6 +1,6 @@
 {
   "classSlug": "3liceo",
-  "updatedAt": "2026-11-19T05:01:04.530Z",
+  "updatedAt": "2026-11-19T12:53:43.730Z",
   "weeks": {
     "2026-09-14": {
       "weekStart": "2026-09-14",
@@ -4597,9 +4597,9 @@
     "2026-11-16": {
       "weekStart": "2026-11-16",
       "publication": {
-        "id": "25e53219-1405-48ca-9d3f-461f6dbec624",
-        "version": 12,
-        "publishedAt": "2026-11-18T15:00:37.199Z",
+        "id": "2d7b2c5f-d219-4a20-9fa1-97f2b3288e1b",
+        "version": 13,
+        "publishedAt": "2026-11-19T07:34:33.298Z",
         "weekStart": "2026-11-16"
       },
       "lessons": [
@@ -5025,7 +5025,7 @@
             "09431394-b73d-4ed8-981f-2b8376f7b56b"
           ],
           "baselineStatus": "modified",
-          "isVariation": true,
+          "isVariation": false,
           "hasSubstitution": true,
           "isFirstOfDay": true
         },
