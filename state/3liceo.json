@@ -1,6 +1,6 @@
 {
   "classSlug": "3liceo",
-  "updatedAt": "2026-11-18T12:57:27.506Z",
+  "updatedAt": "2026-11-19T05:01:04.530Z",
   "weeks": {
     "2026-09-14": {
       "weekStart": "2026-09-14",
@@ -4597,9 +4597,9 @@
     "2026-11-16": {
       "weekStart": "2026-11-16",
       "publication": {
-        "id": "3a2d669b-71f6-4ccc-9290-568525b33407",
-        "version": 11,
-        "publishedAt": "2026-11-17T22:10:38.385Z",
+        "id": "25e53219-1405-48ca-9d3f-461f6dbec624",
+        "version": 12,
+        "publishedAt": "2026-11-18T15:00:37.199Z",
         "weekStart": "2026-11-16"
       },
       "lessons": [
@@ -5013,10 +5013,10 @@
           "title": "Lezione",
           "activityType": "lesson",
           "teachers": [
-            "Claudia Vecchiato"
+            "Gualtiero Giovanazzi"
           ],
           "teacherKeys": [
-            "vecchiato"
+            "giovanazzi"
           ],
           "room": "3LSA",
           "notes": "VERIFICA SCRITTA",
@@ -5025,8 +5025,8 @@
             "09431394-b73d-4ed8-981f-2b8376f7b56b"
           ],
           "baselineStatus": "modified",
-          "isVariation": false,
-          "hasSubstitution": false,
+          "isVariation": true,
+          "hasSubstitution": true,
           "isFirstOfDay": true
         },
         {
@@ -5085,7 +5085,7 @@
     }
   },
   "lastNotification": {
-    "date": "2026-11-18",
+    "date": "2026-11-19",
     "kind": "changes"
   }
 }
