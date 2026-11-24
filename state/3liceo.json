@@ -1,6 +1,6 @@
 {
   "classSlug": "3liceo",
-  "updatedAt": "2026-11-23T05:01:08.423Z",
+  "updatedAt": "2026-11-24T05:01:12.725Z",
   "weeks": {
     "2026-09-14": {
       "weekStart": "2026-09-14",
@@ -5086,9 +5086,9 @@
     "2026-11-23": {
       "weekStart": "2026-11-23",
       "publication": {
-        "id": "b0700801-6254-4e31-8add-8871929e7a15",
-        "version": 1,
-        "publishedAt": "2026-11-22T20:52:17.269Z",
+        "id": "2c1122b1-6511-47b4-bfa3-60e18b1a4e01",
+        "version": 4,
+        "publishedAt": "2026-11-23T13:25:19.497Z",
         "weekStart": "2026-11-23"
       },
       "lessons": [
@@ -5099,10 +5099,16 @@
           "endMinute": 590,
           "start": "08:10",
           "end": "09:50",
-          "title": "Lezione",
+          "title": "Viaggio d'Istruzione a Malta",
           "activityType": "lesson",
-          "teachers": [],
-          "teacherKeys": [],
+          "teachers": [
+            "Andrea Bellagamba",
+            "Claudia Vecchiato"
+          ],
+          "teacherKeys": [
+            "bellagamba",
+            "vecchiato"
+          ],
           "room": "3LSA",
           "notes": "Viaggio studio a Malta",
           "occurrenceIds": [
@@ -5110,7 +5116,7 @@
             "4581eb54-ac94-4def-aa51-997b44bac5a5"
           ],
           "baselineStatus": "modified",
-          "isVariation": false,
+          "isVariation": true,
           "hasSubstitution": false,
           "isFirstOfDay": true
         },
@@ -5121,10 +5127,16 @@
           "endMinute": 705,
           "start": "10:05",
           "end": "11:45",
-          "title": "Lezione",
+          "title": "Viaggio d'Istruzione a Malta",
           "activityType": "lesson",
-          "teachers": [],
-          "teacherKeys": [],
+          "teachers": [
+            "Andrea Bellagamba",
+            "Claudia Vecchiato"
+          ],
+          "teacherKeys": [
+            "bellagamba",
+            "vecchiato"
+          ],
           "room": "3LSA",
           "notes": "Viaggio studio a Malta",
           "occurrenceIds": [
@@ -5132,7 +5144,7 @@
             "b9c9c1be-442c-4031-a4c4-7295646e861d"
           ],
           "baselineStatus": "modified",
-          "isVariation": false,
+          "isVariation": true,
           "hasSubstitution": false,
           "isFirstOfDay": false
         },
@@ -5143,10 +5155,16 @@
           "endMinute": 820,
           "start": "12:00",
           "end": "13:40",
-          "title": "Lezione",
+          "title": "Viaggio d'Istruzione a Malta",
           "activityType": "lesson",
-          "teachers": [],
-          "teacherKeys": [],
+          "teachers": [
+            "Andrea Bellagamba",
+            "Claudia Vecchiato"
+          ],
+          "teacherKeys": [
+            "bellagamba",
+            "vecchiato"
+          ],
           "room": "3LSA",
           "notes": "Viaggio studio a Malta",
           "occurrenceIds": [
@@ -5154,7 +5172,7 @@
             "c7a540c6-bd26-4df5-b13a-43ed5acaec67"
           ],
           "baselineStatus": "modified",
-          "isVariation": false,
+          "isVariation": true,
           "hasSubstitution": false,
           "isFirstOfDay": false
         },
@@ -5195,10 +5213,16 @@
           "endMinute": 590,
           "start": "08:10",
           "end": "09:50",
-          "title": "Lezione",
+          "title": "Viaggio d'Istruzione a Malta",
           "activityType": "lesson",
-          "teachers": [],
-          "teacherKeys": [],
+          "teachers": [
+            "Andrea Bellagamba",
+            "Claudia Vecchiato"
+          ],
+          "teacherKeys": [
+            "bellagamba",
+            "vecchiato"
+          ],
           "room": "3LSA",
           "notes": "Viaggio studio a Malta",
           "occurrenceIds": [
@@ -5206,7 +5230,7 @@
             "926222a7-7b38-47e0-9b32-3406d7e0779a"
           ],
           "baselineStatus": "modified",
-          "isVariation": false,
+          "isVariation": true,
           "hasSubstitution": false,
           "isFirstOfDay": true
         },
@@ -5217,10 +5241,16 @@
           "endMinute": 705,
           "start": "10:05",
           "end": "11:45",
-          "title": "Lezione",
+          "title": "Viaggio d'Istruzione a Malta",
           "activityType": "lesson",
-          "teachers": [],
-          "teacherKeys": [],
+          "teachers": [
+            "Andrea Bellagamba",
+            "Claudia Vecchiato"
+          ],
+          "teacherKeys": [
+            "bellagamba",
+            "vecchiato"
+          ],
           "room": "3LSA",
           "notes": "Viaggio studio a Malta",
           "occurrenceIds": [
@@ -5228,7 +5258,7 @@
             "dd39934e-bc6b-4af8-ba16-687e87e06eca"
           ],
           "baselineStatus": "modified",
-          "isVariation": false,
+          "isVariation": true,
           "hasSubstitution": false,
           "isFirstOfDay": false
         },
@@ -5239,10 +5269,16 @@
           "endMinute": 820,
           "start": "12:00",
           "end": "13:40",
-          "title": "Lezione",
+          "title": "Viaggio d'Istruzione a Malta",
           "activityType": "lesson",
-          "teachers": [],
-          "teacherKeys": [],
+          "teachers": [
+            "Andrea Bellagamba",
+            "Claudia Vecchiato"
+          ],
+          "teacherKeys": [
+            "bellagamba",
+            "vecchiato"
+          ],
           "room": "3LSA",
           "notes": "Viaggio studio a Malta",
           "occurrenceIds": [
@@ -5250,7 +5286,7 @@
             "236524ea-e9ce-4c57-bca8-1781a4bbb7e1"
           ],
           "baselineStatus": "modified",
-          "isVariation": false,
+          "isVariation": true,
           "hasSubstitution": false,
           "isFirstOfDay": false
         },
@@ -5261,10 +5297,16 @@
           "endMinute": 590,
           "start": "08:10",
           "end": "09:50",
-          "title": "Lezione",
+          "title": "Viaggio d'Istruzione a Malta",
           "activityType": "lesson",
-          "teachers": [],
-          "teacherKeys": [],
+          "teachers": [
+            "Andrea Bellagamba",
+            "Claudia Vecchiato"
+          ],
+          "teacherKeys": [
+            "bellagamba",
+            "vecchiato"
+          ],
           "room": "3LSA",
           "notes": "Viaggio studio a Malta",
           "occurrenceIds": [
@@ -5272,7 +5314,7 @@
             "4a158b93-a29c-4d6d-9cdb-613203d61b8a"
           ],
           "baselineStatus": "modified",
-          "isVariation": false,
+          "isVariation": true,
           "hasSubstitution": false,
           "isFirstOfDay": true
         },
@@ -5283,10 +5325,16 @@
           "endMinute": 705,
           "start": "10:05",
           "end": "11:45",
-          "title": "Lezione",
+          "title": "Viaggio d'Istruzione a Malta",
           "activityType": "lesson",
-          "teachers": [],
-          "teacherKeys": [],
+          "teachers": [
+            "Andrea Bellagamba",
+            "Claudia Vecchiato"
+          ],
+          "teacherKeys": [
+            "bellagamba",
+            "vecchiato"
+          ],
           "room": "3LSA",
           "notes": "Viaggio studio a Malta",
           "occurrenceIds": [
@@ -5294,7 +5342,7 @@
             "5eba5fbc-1e98-4fa4-bdc5-bd953a83990e"
           ],
           "baselineStatus": "modified",
-          "isVariation": false,
+          "isVariation": true,
           "hasSubstitution": false,
           "isFirstOfDay": false
         },
@@ -5305,10 +5353,16 @@
           "endMinute": 820,
           "start": "12:00",
           "end": "13:40",
-          "title": "Lezione",
+          "title": "Viaggio d'Istruzione a Malta",
           "activityType": "lesson",
-          "teachers": [],
-          "teacherKeys": [],
+          "teachers": [
+            "Andrea Bellagamba",
+            "Claudia Vecchiato"
+          ],
+          "teacherKeys": [
+            "bellagamba",
+            "vecchiato"
+          ],
           "room": "3LSA",
           "notes": "Viaggio studio a Malta",
           "occurrenceIds": [
@@ -5316,7 +5370,7 @@
             "43324643-7115-44de-8a3a-05d2c736d970"
           ],
           "baselineStatus": "modified",
-          "isVariation": false,
+          "isVariation": true,
           "hasSubstitution": false,
           "isFirstOfDay": false
         },
@@ -5357,10 +5411,16 @@
           "endMinute": 590,
           "start": "08:10",
           "end": "09:50",
-          "title": "Lezione",
+          "title": "Viaggio d'Istruzione a Malta",
           "activityType": "lesson",
-          "teachers": [],
-          "teacherKeys": [],
+          "teachers": [
+            "Andrea Bellagamba",
+            "Claudia Vecchiato"
+          ],
+          "teacherKeys": [
+            "bellagamba",
+            "vecchiato"
+          ],
           "room": "3LSA",
           "notes": "Viaggio studio a Malta",
           "occurrenceIds": [
@@ -5368,7 +5428,7 @@
             "5be3928a-6e75-4032-9aa2-fe3f62122864"
           ],
           "baselineStatus": "modified",
-          "isVariation": false,
+          "isVariation": true,
           "hasSubstitution": false,
           "isFirstOfDay": true
         },
@@ -5379,10 +5439,16 @@
           "endMinute": 705,
           "start": "10:05",
           "end": "11:45",
-          "title": "Lezione",
+          "title": "Viaggio d'Istruzione a Malta",
           "activityType": "lesson",
-          "teachers": [],
-          "teacherKeys": [],
+          "teachers": [
+            "Andrea Bellagamba",
+            "Claudia Vecchiato"
+          ],
+          "teacherKeys": [
+            "bellagamba",
+            "vecchiato"
+          ],
           "room": "3LSA",
           "notes": "Viaggio studio a Malta",
           "occurrenceIds": [
@@ -5390,7 +5456,7 @@
             "eaee3317-28af-462d-9cf9-102b99dda372"
           ],
           "baselineStatus": "modified",
-          "isVariation": false,
+          "isVariation": true,
           "hasSubstitution": false,
           "isFirstOfDay": false
         },
@@ -5401,10 +5467,16 @@
           "endMinute": 820,
           "start": "12:00",
           "end": "13:40",
-          "title": "Lezione",
+          "title": "Viaggio d'Istruzione a Malta",
           "activityType": "lesson",
-          "teachers": [],
-          "teacherKeys": [],
+          "teachers": [
+            "Andrea Bellagamba",
+            "Claudia Vecchiato"
+          ],
+          "teacherKeys": [
+            "bellagamba",
+            "vecchiato"
+          ],
           "room": "3LSA",
           "notes": "Viaggio studio a Malta",
           "occurrenceIds": [
@@ -5412,7 +5484,7 @@
             "9f3e3543-8a4c-4cb6-9673-8fc4b0980abf"
           ],
           "baselineStatus": "modified",
-          "isVariation": false,
+          "isVariation": true,
           "hasSubstitution": false,
           "isFirstOfDay": false
         },
@@ -5423,10 +5495,16 @@
           "endMinute": 590,
           "start": "08:10",
           "end": "09:50",
-          "title": "Lezione",
+          "title": "Viaggio d'Istruzione a Malta",
           "activityType": "lesson",
-          "teachers": [],
-          "teacherKeys": [],
+          "teachers": [
+            "Andrea Bellagamba",
+            "Claudia Vecchiato"
+          ],
+          "teacherKeys": [
+            "bellagamba",
+            "vecchiato"
+          ],
           "room": "3LSA",
           "notes": "Viaggio studio a Malta",
           "occurrenceIds": [
@@ -5434,7 +5512,7 @@
             "a1ba120f-1e21-465e-892d-248b23612c0f"
           ],
           "baselineStatus": "modified",
-          "isVariation": false,
+          "isVariation": true,
           "hasSubstitution": false,
           "isFirstOfDay": true
         },
@@ -5445,10 +5523,16 @@
           "endMinute": 705,
           "start": "10:05",
           "end": "11:45",
-          "title": "Lezione",
+          "title": "Viaggio d'Istruzione a Malta",
           "activityType": "lesson",
-          "teachers": [],
-          "teacherKeys": [],
+          "teachers": [
+            "Andrea Bellagamba",
+            "Claudia Vecchiato"
+          ],
+          "teacherKeys": [
+            "bellagamba",
+            "vecchiato"
+          ],
           "room": "3LSA",
           "notes": "Viaggio studio a Malta",
           "occurrenceIds": [
@@ -5456,7 +5540,7 @@
             "5eccb60e-a2a1-499d-9134-54514056700b"
           ],
           "baselineStatus": "modified",
-          "isVariation": false,
+          "isVariation": true,
           "hasSubstitution": false,
           "isFirstOfDay": false
         },
@@ -5467,10 +5551,16 @@
           "endMinute": 820,
           "start": "12:00",
           "end": "13:40",
-          "title": "Lezione",
+          "title": "Viaggio d'Istruzione a Malta",
           "activityType": "lesson",
-          "teachers": [],
-          "teacherKeys": [],
+          "teachers": [
+            "Andrea Bellagamba",
+            "Claudia Vecchiato"
+          ],
+          "teacherKeys": [
+            "bellagamba",
+            "vecchiato"
+          ],
           "room": "3LSA",
           "notes": "Viaggio studio a Malta",
           "occurrenceIds": [
@@ -5478,7 +5568,7 @@
             "303d9d49-dcdd-499e-bf9e-75a507b27bb9"
           ],
           "baselineStatus": "modified",
-          "isVariation": false,
+          "isVariation": true,
           "hasSubstitution": false,
           "isFirstOfDay": false
         }
@@ -6019,7 +6109,7 @@
     }
   },
   "lastNotification": {
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "kind": "changes"
   }
 }
