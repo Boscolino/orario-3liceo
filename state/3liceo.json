@@ -1,6 +1,6 @@
 {
   "classSlug": "3liceo",
-  "updatedAt": "2026-11-24T05:01:12.725Z",
+  "updatedAt": "2026-11-25T05:01:05.175Z",
   "weeks": {
     "2026-09-14": {
       "weekStart": "2026-09-14",
@@ -6109,7 +6109,7 @@
     }
   },
   "lastNotification": {
-    "date": "2026-11-24",
-    "kind": "changes"
+    "date": "2026-11-25",
+    "kind": "none"
   }
 }
