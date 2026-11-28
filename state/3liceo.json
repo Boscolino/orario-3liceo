@@ -1,6 +1,6 @@
 {
   "classSlug": "3liceo",
-  "updatedAt": "2026-11-27T05:01:16.215Z",
+  "updatedAt": "2026-11-28T05:01:13.141Z",
   "weeks": {
     "2026-09-14": {
       "weekStart": "2026-09-14",
@@ -5577,9 +5577,9 @@
     "2026-11-30": {
       "weekStart": "2026-11-30",
       "publication": {
-        "id": "7556fbee-424c-46fb-b776-bf9018e27db8",
-        "version": 3,
-        "publishedAt": "2026-11-26T19:55:02.671Z",
+        "id": "d91dda3e-82dc-4017-be0f-666a22f7e42c",
+        "version": 4,
+        "publishedAt": "2026-11-27T07:48:33.736Z",
         "weekStart": "2026-11-30"
       },
       "lessons": [
@@ -5762,7 +5762,7 @@
             "72bfd7a2-c8b1-4a5a-84a9-0e88e1a6d393"
           ],
           "baselineStatus": "modified",
-          "isVariation": true,
+          "isVariation": false,
           "hasSubstitution": true,
           "isFirstOfDay": false
         },
@@ -5787,7 +5787,7 @@
             "8cf70c9a-01cf-4d96-b8af-3edd2bb35d2e"
           ],
           "baselineStatus": "modified",
-          "isVariation": true,
+          "isVariation": false,
           "hasSubstitution": true,
           "isFirstOfDay": false
         },
@@ -5839,7 +5839,7 @@
             "5a37897d-b5b0-44a7-83e0-0bad9db44ef8"
           ],
           "baselineStatus": "modified",
-          "isVariation": true,
+          "isVariation": false,
           "hasSubstitution": true,
           "isFirstOfDay": true
         },
@@ -6110,9 +6110,9 @@
     "2026-12-07": {
       "weekStart": "2026-12-07",
       "publication": {
-        "id": "ebcffaf3-5ef2-4096-9170-2db1785c068c",
-        "version": 1,
-        "publishedAt": "2026-11-26T19:55:13.028Z",
+        "id": "f20f41ef-de40-4a97-8c43-31999fad12c0",
+        "version": 2,
+        "publishedAt": "2026-11-27T07:48:35.165Z",
         "weekStart": "2026-12-07"
       },
       "lessons": [
@@ -6433,9 +6433,9 @@
     "2026-12-14": {
       "weekStart": "2026-12-14",
       "publication": {
-        "id": "58c0fa4a-924d-4bcb-a0b8-9081f73fe493",
-        "version": 1,
-        "publishedAt": "2026-11-26T19:55:22.055Z",
+        "id": "b653b7b3-f3bc-4e64-9d9d-97075b7ebd92",
+        "version": 2,
+        "publishedAt": "2026-11-27T07:48:35.945Z",
         "weekStart": "2026-12-14"
       },
       "lessons": [
@@ -7262,7 +7262,7 @@
     }
   },
   "lastNotification": {
-    "date": "2026-11-27",
-    "kind": "changes"
+    "date": "2026-11-28",
+    "kind": "none"
   }
 }
